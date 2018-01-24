@@ -15,10 +15,8 @@ Oppgavesett 1 - Oppgave 3:
 
 
 **2. Gå gjennom https://tour.golang.org/basics/1 - Hvilke forskjeller ser du i forhold til programmeringsspråket Java?** 
-
-    - Go har ikke private og public. 
-    - I Go bruker man pakker istedenfor klasser.
-    - 
-    - 
+   
+   - Go har ikke private og public. 
+   - I Go bruker man pakker istedenfor klasser.
 
 
