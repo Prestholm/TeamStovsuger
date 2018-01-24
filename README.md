@@ -7,11 +7,11 @@ Oppgavesett 1 - Oppgave 3:
 
 1. Finn ut hva  objektfiler heter for de mest brukte platformene (Unix/Linux, MS Windows, Mac OS X). Hvorfor, etter din mening, har disse platformene så forskjellige objektfil-formater?
 
-Unix/Linux = 
+Unix/Linux = ELF
 
 MS Windows = 
 
-Mac OSX = 
+Mac OS X = Mach-O.
 
 Disse platformene har så forskjellige objektfil-formater fordi ...
 
