@@ -19,9 +19,9 @@ Oppgavesett 1 - Oppgave 3:
    
    - Go har ikke private og public. 
    - I Go bruker man pakker istedenfor klasser.
-   - I Go importerer vi i parantes
-   - Exporterte navn starter med stor bokstav , f.eks. "Pi" er expotert fra "math" pakken. Hvis man bruker "pi" bruker man ikke
-     expoterte navn og heller fra den interne pakken.
+   - I Go importerer vi i parantes.
+   - Exporterte navn starter med stor bokstav , f.eks. "Pi" er exportert fra "math" pakken. Hvis man bruker "pi" bruker man ikke
+     exporterte navn, men heller fra den interne pakken.
    - Metoder er mer eller mindre det samme. Men det er litt friere med hvordan man definerer int parametere f. eks. func metode(x, y int) 
      mens i java ville man heller ha skrevet (int x, int y). Metodene kan også returnere flere resultat i Go. I Go kan man returnere 
      "nakne" resultater, men dette vil bare fungere i små metoder, siden det kan hemme hvordan man leser verdiene som er utgitt i lengre 
