@@ -11,7 +11,8 @@ Oppgavesett 1 - Oppgave 3:
   - MS Windows = PE (Portable Executable). 
   - Mac OS X = Mach-O.
 
-    Disse platformene har så forskjellige objektfil-formater fordi hver av alle de forskjellige operativsystemene fungerer på fundamentale forskjellige måter, derfor må de fleste filer være spesifikk forskjellige fra hverandre til å være brukbare av hvert system.
+    Disse platformene har så forskjellige objektfil-formater fordi hver av operativsystemene fungerer på fundamentalt forskjellige måter. 
+    Derfor må de fleste filer være spesifikt forskjellige fra hverandre for å være brukbare for hvert enkelt system.
 
 
 **2. Gå gjennom https://tour.golang.org/basics/1 - Hvilke forskjeller ser du i forhold til programmeringsspråket Java?** 
@@ -25,6 +26,8 @@ Oppgavesett 1 - Oppgave 3:
      mens i java ville man heller ha skrevet (int x, int y). Metodene kan også returnere flere resultat i Go. I Go kan man returnere 
      "nakne" resultater, men dette vil bare fungere i små metoder, siden det kan hemme hvordan man leser verdiene som er utgitt i lengre 
      metoder.
-   - For å forklare variabler må man bruke "var" før vi erklarer hva variabel vi bruker. F.eks. "var x, y int" eller "var hei bool". Inne i f.eks en Main-metode kan man bruke ":=" for å forkorte bruken av "var" - "i := 3" eller "hei := false". Erklærte variabler som ikke er blitt gitt en spesifikk verdi er null eller false. 
+   - For å forklare variabler må man bruke "var" før vi erklarer hva variabel vi bruker. F.eks. "var x, y int" eller "var hei bool". Inne  
+     i f.eks en Main-metode kan man bruke ":=" for å forkorte bruken av "var" - "i := 3" eller "hei := false". Erklærte variabler som ikke 
+     er blitt gitt en spesifikk verdi er null eller false. 
    
 
