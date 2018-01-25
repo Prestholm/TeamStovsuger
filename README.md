@@ -11,7 +11,7 @@ Oppgavesett 1 - Oppgave 3:
   - MS Windows = PE (Portable Executable). 
   - Mac OS X = Mach-O.
 
-    Disse platformene har så forskjellige objektfil-formater fordi hver av alle de forskjellige operativsystemene fungerer på fundamentale forskjellige måter, derfor trenger de fleste filer å være spesifikk være brukbare av hvert system.
+    Disse platformene har så forskjellige objektfil-formater fordi hver av alle de forskjellige operativsystemene fungerer på fundamentale forskjellige måter, derfor må de fleste filer være spesifikk forskjellige fra hverandre til å være brukbare av hvert system.
 
 
 **2. Gå gjennom https://tour.golang.org/basics/1 - Hvilke forskjeller ser du i forhold til programmeringsspråket Java?** 
