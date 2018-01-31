@@ -4,8 +4,8 @@ Binære tall - Hexadesimaltall - Desimaltall 1101 - 0xD - 13 110111101010 - 0xDE
 
 Oppgave A:
 
-Beskriv hvordan man konverterer fra binære tall til hexadesimaltall og motsatt
-Beskriv hvordan man konverterer fra binære tall til desmialtall og motsatt
+-Beskriv hvordan man konverterer fra binære tall til hexadesimaltall og motsatt
+-Beskriv hvordan man konverterer fra binære tall til desmialtall og motsatt
 Oppgave B:
 
 Beskriv hvordan man konverterer fra hexadesimaltall til desimaltall og motsatt
