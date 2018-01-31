@@ -6,8 +6,10 @@ Oppgave A:
 
 - Beskriv hvordan man konverterer fra binære tall til hexadesimaltall og motsatt
 - Beskriv hvordan man konverterer fra binære tall til desmialtall og motsatt
+
 Oppgave B:
-- Beskriv hvordan man konverterer fra hexadesimaltall til desimaltall og motsatt
+
+Beskriv hvordan man konverterer fra hexadesimaltall til desimaltall og motsatt
 
 2: Forstå algoritmer og utfør benchmark-tester på koden
 
