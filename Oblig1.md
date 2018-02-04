@@ -1,4 +1,8 @@
-1: Fyll ut manglende tall
+
+# Obligatorisk oppgave 1: 
+--------------------------
+
+## 1.Fyll ut manglende tall
 
 Binære tall - Hexadesimaltall - Desimaltall 
  - 1101 - 0xD - 13
@@ -7,17 +11,8 @@ Binære tall - Hexadesimaltall - Desimaltall
  - 1111111111111111 - 0xFFFF - 65535
  - 10001011110001010 - 0x1178A - 71562
 
-Oppgave A:
 
-- Beskriv hvordan man konverterer fra binære tall til hexadesimaltall og motsatt
-- Beskriv hvordan man konverterer fra binære tall til desmialtall og motsatt
+**A.Beskriv kort metode for å gå fra binære tall til hexadesimale tall og motsatt. Beskriv kort metoden for å gå fra binære tall til desimaltall og motsatt**
 
-Oppgave B:
 
-Beskriv hvordan man konverterer fra hexadesimaltall til desimaltall og motsatt
-
-2: Forstå algoritmer og utfør benchmark-tester på koden
-
-3: Forstå prosessadministrasjon på en plattform
-
-4: Typografiske symboler
+**B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.**
