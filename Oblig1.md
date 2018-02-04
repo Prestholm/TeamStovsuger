@@ -1,6 +1,6 @@
 
 # Obligatorisk oppgave 1: 
---------------------------
+
 
 ## 1.Fyll ut manglende tall
 
