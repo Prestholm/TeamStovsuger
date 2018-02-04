@@ -2,7 +2,7 @@
 # Obligatorisk oppgave 1: 
 
 
-## 1.Fyll ut manglende tall
+## 1. Fyll ut manglende tall
 
 **Binære tall - Hexadesimaltall - Desimaltall**  
  - 1101 - 0xD - 13
@@ -13,7 +13,7 @@
 
 
 
-### A.Beskriv kort metode for å gå fra binære tall til hexadesimale tall og motsatt. Beskriv kort metoden for å gå fra binære tall til desimaltall og motsatt
+### A. Beskriv kort metode for å gå fra binære tall til hexadesimale tall og motsatt. Beskriv kort metoden for å gå fra binære tall til desimaltall og motsatt
 
 
 
