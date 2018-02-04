@@ -1,5 +1,9 @@
 # TeamStovsuger
 
+Medlemmer: 
+- Henning Van Ta.
+- Victor Prestholm.
+- Arian Nuland. 
 
 
 Oppgavesett 1 - Oppgave 3:
