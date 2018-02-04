@@ -13,8 +13,8 @@
 
 
 
-###A.Beskriv kort metode for å gå fra binære tall til hexadesimale tall og motsatt. Beskriv kort metoden for å gå fra binære tall til desimaltall og motsatt
+### A.Beskriv kort metode for å gå fra binære tall til hexadesimale tall og motsatt. Beskriv kort metoden for å gå fra binære tall til desimaltall og motsatt
 
 
 
-###B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
+### B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
