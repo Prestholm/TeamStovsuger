@@ -165,3 +165,8 @@
 
 
 ### B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
+
+**Metode for å gå fra hexadesimale tall til desimaltall**
+
+
+**Metode for å gå fra desimaltall til hexadesimale tall**
