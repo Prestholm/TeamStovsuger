@@ -21,19 +21,19 @@
 
 <td style="width: 265px;">
 
-<p>Bin&aelig;re tall (mest signifikant bit til venstre</p>
+**Binære tall (mest signifikant bit til venstre)**
 
 </td>
 
 <td style="width: 204px;">
 
-<p>Hexadesimaltall</p>
+**Hexadesimaltall**
 
 </td>
 
 <td style="width: 195px;">
 
-<p>Desimaltall</p>
+**Desimaltall**
 
 </td>
 
