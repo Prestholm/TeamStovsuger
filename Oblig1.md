@@ -183,7 +183,9 @@
 ### Oppgave C. Utfør alle benchmark- testene med kommando “go test -bench=.” og presenter resultatene grafisk. Hva kan du si om big-O for alle 3 algoritmene som du har testet?
 
 
-## 3. Skriv et program som består av en evig løkke. Hvor mye minne og CPU bruker programmet når det kjører. Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
+## 3. Forstå prosessadministrasjon på en platform. 
+
+### Skriv et program som består av en evig løkke. Hvor mye minne og CPU bruker programmet når det kjører. Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
 
 
 ## 4. Typografiske symboler.
