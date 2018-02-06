@@ -194,6 +194,11 @@ På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet 
 
 ### Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
 
+INT signal ("interrupt", SIGINT) håndteres av programmet fordi vi har spesifikt programmert det til å gjøre det. Denne trigger også avslutningsmeldingen. 
+
+TSTP signal ("terminal stop", SIGTSTP) håndteres av programmet. Selv om dette ikke er programmert inn får signalet terminalen til å avslutte. Den genererer derimot ikke avlsutningsmeldingen i etterkant. 
+
+QUIT signal (SIGQUIT) håndteres ikke av programmet, og skriver heller ikke ut avslutningsmelding. 
 
 
 ## 4. Typografiske symboler.
