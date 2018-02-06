@@ -186,11 +186,12 @@
 ## 3. Forstå prosessadministrasjon på en platform. 
 
 ### Skriv et program som består av en evig løkke. 
-Se loop.go i mappen "Oblig1". 
+Se loop.go i mappen "Oblig1". Den evige løkken skriver ut "venter på signal..." helt til den mottar et signal. 
 
 ### Hvor mye minne og CPU bruker programmet når det kjører. 
 På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet kjøres i terminal. 
 
+-- (legg inn bilder + forsøk på flere enheter) --
 
 ### Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
 
