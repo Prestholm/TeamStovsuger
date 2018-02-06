@@ -185,7 +185,13 @@
 
 ## 3. Forstå prosessadministrasjon på en platform. 
 
-### Skriv et program som består av en evig løkke. Hvor mye minne og CPU bruker programmet når det kjører. Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
+### Skriv et program som består av en evig løkke. 
+
+
+### Hvor mye minne og CPU bruker programmet når det kjører. 
+
+### Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
+
 
 
 ## 4. Typografiske symboler.
