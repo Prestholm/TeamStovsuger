@@ -161,7 +161,9 @@
 
 
 **Metode for å gå fra desimaltall til binære tall**
+Først deler man tallet på 2. Får man en rest skriver man 1, dersom man ikke får rest skriver man 0. Så kjører man denne prosessen helt til svaret blir 0. Det ferdige binære tallet leser vi deretter i omvendt rekkefølge, altså nedenfra og opp. 
 
+For eksempel: 
 
 
 ### Oppgave B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
