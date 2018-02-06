@@ -153,9 +153,15 @@
 
 **Metode for å gå fra binære tall til hexadesimale tall**
 
+I denne metoden begynner vi bakerst med å dele det binære tallet i grupper på fire siffer hver. Deretter gjør vi hver gruppe med fire siffer i de binære tallene om til hexadesimale tall. 
+
+For eksempel: 
 
 **Metode for å gå fra hexadesimale tall til binære tall**
 
+Først bruker vi hvert enkelt siffer i det hexadesimale tallet til å finne det tilsvarende binære tallet. Til slutt setter vi disse tallene sammen til et helt tall, ved å følge rekkefølgen tallene stod i som hexadesimale tall. Dersom det binære tallet vi får blir langt, deler vi det opp i grupper, gjerne på 8 siffer per gruppe. 
+
+For eksempel: 
 
 **Metode for å gå fra binære tall til desimaltall**
 
