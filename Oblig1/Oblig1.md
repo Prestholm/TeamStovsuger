@@ -157,13 +157,21 @@ I denne metoden begynner vi bakerst med å dele det binære tallet i grupper på
 
 For eksempel: 
 
+
 **Metode for å gå fra hexadesimale tall til binære tall**
 
 Først bruker vi hvert enkelt siffer i det hexadesimale tallet til å finne det tilsvarende binære tallet. Til slutt setter vi disse tallene sammen til et helt tall, ved å følge rekkefølgen tallene stod i som hexadesimale tall. Dersom det binære tallet vi får blir langt, deler vi det opp i grupper, gjerne på 8 siffer per gruppe. 
 
 For eksempel: 
 
+
 **Metode for å gå fra binære tall til desimaltall**
+
+I denne metoden tar vi i bruk følgende formel: *verdi = siffer x grunntall^posisjon*
+
+
+
+For eksempel: 
 
 
 **Metode for å gå fra desimaltall til binære tall**
@@ -178,8 +186,13 @@ For eksempel:
 **Metode for å gå fra hexadesimale tall til desimaltall**
 
 
+
+
 **Metode for å gå fra desimaltall til hexadesimale tall**
 
+Først deler vi tallet på 16. Dersom vi får rest skriver vi ned hva vi får igjen, og dersom vi ikke får rest skriver vi 0. Så starter vi fra begynnelsen igjen helt til svaret blir 0. Til slutt leser vi det heksadesimale tallet vi får nedenfra og opp. Vi kan se sammenhenger mellom denne metoden og metoden for å gå fra desimaltall til binære tall. 
+
+For eksempel: 
 
 
 ## 2. Forstå algoritmer og utføre "benchmark"-tester på koden.
