@@ -162,7 +162,7 @@
 
 **Metode for å gå fra desimaltall til binære tall**
 
-Først deler man tallet på 2. Får man en rest skriver man 1, dersom man ikke får rest skriver man 0. Så kjører man denne prosessen helt til svaret blir 0. Det ferdige binære tallet leser vi deretter i omvendt rekkefølge, altså nedenfra og opp. 
+Først deler man tallet på 2. Får man en rest skriver man 1, og dersom man ikke får rest skriver man 0. Så kjører man denne prosessen helt til svaret blir 0. Det ferdige binære tallet leser vi deretter i omvendt rekkefølge, altså nedenfra og opp. 
 
 For eksempel: 
 
@@ -173,6 +173,10 @@ For eksempel:
 
 
 **Metode for å gå fra desimaltall til hexadesimale tall**
+
+Først deler vi tallet på 16. Får man rest skriver man ned resten, og dersom man ikke får rest skriver man 0. Så starter man fra begynnelsen igjen helt til svaret blir 0. Vi ser at denne metoden har mange likheter med overgangen fra desimaltall til binære tall. Som i sistnevnte metode leser vi til slutt tallet nedenfra og opp, altså i omvendt rekkefølge. 
+
+For eksempel: 
 
 
 ## 2. Forstå algoritmer og utføre "benchmark"-tester på koden.
