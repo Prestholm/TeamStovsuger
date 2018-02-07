@@ -204,12 +204,14 @@ QUIT signal (SIGQUIT) håndteres ikke av programmet, og skriver heller ikke ut a
 
 ### Oppgave A. Bruk filen ascii.go i Oblig1 mappen og lag en funksjon som itererer (går i en løkke over)  over tegn med byte-verdier fra 0x80 til 0xFF, dvs. det utvidede ASCII settet. 
 
+I mappen Oppgave 4 ser man filen ascii.go i mappen ascii som kan kjøres via asciimain.go. Dette programmet skal kunne itererer over tegn med byte-verdier fra 0x80 til 0xFF. 
 
 
 ### Oppgave B. Lag funksjonen ExtendedASCIIText () i samme filen iso.go, som skriver ut: " € ÷ ¾ dollar "
 
-
+I mappen Oppgave 4 i samme fil som i 4a) finner du ascii.go filen med ExtendedASCIItext(). Den skal skrive ut "€ ÷ ¾ dollar " fra byte-verdier lagt inn.
 
 ### Oppgave C. Implementer en test for funksjonen ExtendedASCIIText(String) i egen fil iso_test.go, som tester om input-verdier (av type string) inneholder kun tegn fra en Extended ASCII.
 
 
+I mappen oppgave 4/ascii finner du iso_test.go som tar ut verdiene fra ExtendedASCIItext() og tester om de er i en verdi opp til 0xFF.
