@@ -18,7 +18,7 @@ func testExtendedASCII(t * testing.B){
 
 func tests(z2 string) bool{
 for _, i := range z2{
-		if i>0xff{
+		if i<0x80 ||i>0xff{
 			return false
 		}
 		}
