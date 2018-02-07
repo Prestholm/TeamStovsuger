@@ -204,7 +204,7 @@ QUIT signal (SIGQUIT) håndteres ikke av programmet, og skriver heller ikke ut a
 
 ### Oppgave A. Bruk filen ascii.go i Oblig1 mappen og lag en funksjon som itererer (går i en løkke over)  over tegn med byte-verdier fra 0x80 til 0xFF, dvs. det utvidede ASCII settet. 
 
-I mappen Oppgave 4 ser man filen ascii.go i mappen ascii som kan kjøres via asciimain.go. Dette programmet skal kunne itererer over tegn med byte-verdier fra 0x80 til 0xFF. 
+I mappen Oppgave 4 ser man filen ascii.go i mappen ascii som kan kjøres via asciimain.go. Dette programmet skal kunne itererer over tegn med byte-verdier fra 0x80 til 0xFF. Utskriften fra funksjonen har de fleste symbolene, noen tegn er utilgjenelige i goland, derfor viser de fram som en boks istedet for et symbol. De binære tallene virker korrekte i forhold til hexadesimalene. 
 
 
 ### Oppgave B. Lag funksjonen ExtendedASCIIText () i samme filen iso.go, som skriver ut: " € ÷ ¾ dollar "
