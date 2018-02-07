@@ -21,15 +21,15 @@ func perm(n int) (out []int) {
 }
 	// Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
 func BenchmarkBSortM100(b *testing.B) {
-	benchmarkBSortM(100, b)
+	benchmarkBSortM(200, b)
 }
 
 func BenchmarkBSortM1000(b *testing.B) {
-	benchmarkBSortM(1000, b)
+	benchmarkBSortM(2000, b)
 }
 
 func BenchmarkBSortM10000(b *testing.B) {
-	benchmarkBSortM(10000, b)
+	benchmarkBSortM(20000, b)
 }
 	// Skriv en ny testfunksjon benchmarkBSortModified
 func benchmarkBSortM(i int, b *testing.B) {
