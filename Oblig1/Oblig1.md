@@ -146,6 +146,7 @@ Først deler man tallet på 2. Får man en rest skriver man 1, og dersom man ikk
 For eksempel: 
 
 
+
 ### Oppgave B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
 
 **Metode for å gå fra hexadesimale tall til desimaltall**
