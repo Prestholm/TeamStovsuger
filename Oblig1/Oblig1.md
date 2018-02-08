@@ -137,6 +137,17 @@ I denne metoden tar vi i bruk følgende formel: *verdi = siffer x grunntall^posi
 
 
 For eksempel: 
+Ta utgangspunkt i det binære tallet 100101. 
+
+Posisjon      Siffer
+0               1           1 * 2^0 = 1.  
+1               0           0 * 2^1 = 0. 
+2               1           1 * 2^2 = 4. 
+3               0           0 * 2^3 = 0.
+4               0           0 * 2^4 = 0. 
+5                1          1 * 2^5 = 32. 
+
+32 + 4 +1 = 37. 
 
 
 
