@@ -144,17 +144,6 @@ For eksempel:
 Først deler man tallet på 2. Får man en rest skriver man 1, og dersom man ikke får rest skriver man 0. Så kjører man denne prosessen helt til svaret blir 0. Det ferdige binære tallet leser vi deretter i omvendt rekkefølge, altså nedenfra og opp. 
 
 For eksempel: 
-Ta utgangspunkt i tallet 133.
-- 133/2 = 1
-- 66/2 = 0
-- 33/2 = 1
-- 16/2  = 0
-- 8/2  = 0
-- 4/2 = 0
-- 2 = 0
-- 1/2 = 1
-
-Det binære tallet av 133 blir dermed 10000101. 
 
 
 
@@ -221,7 +210,7 @@ I mappen Oppgave 4 ser man filen ascii.go i mappen ascii som kan kjøres via asc
 
 ### Oppgave B. Lag funksjonen ExtendedASCIIText () i samme filen iso.go, som skriver ut: " € ÷ ¾ dollar "
 
-I mappen Oppgave 4 i samme fil som i 4a) finner du ascii.go filen med ExtendedASCIItext(). Den skal skrive ut "€ ÷ ¾ dollar " fra byte-verdier lagt inn. For å få skrivet ut  € ÷ ¾ dollar, bruker vi x80\xf7\xbe\x64\x6f\x6c\x6c\x61\x72. Den er skrevet og testet først i Windows goland. 
+I mappen Oppgave 4 i samme fil som i 4a) finner du ascii.go filen med ExtendedASCIItext(). Den skal skrive ut "€ ÷ ¾ dollar " fra byte-verdier lagt inn. For å få skrivet ut  € ÷ ¾ dollar, bruker vi x80\xf7\xbe\x64\x6f\x6c\x6c\x61\x72. Den er skrevet og testet først i Windows goland. Noen av symbolene vil ikke vises i kommandovinduet. Resultatene er likt selv i goland, powershell og terminalen. Terminalene har ikke tegnsettet til for alle disse symbolene i sin rekkevidde, derfor vil noen av symbolene være markert som spørsmålstegn i boks, eller bare en boks. Selv tegnesettet i windows-terminalen gir ikke symbolene selv om standarden sier at symbolene fins i settet.
 
 ### Oppgave C. Implementer en test for funksjonen ExtendedASCIIText(String) i egen fil iso_test.go, som tester om input-verdier (av type string) inneholder kun tegn fra en Extended ASCII.
 
