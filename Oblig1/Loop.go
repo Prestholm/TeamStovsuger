@@ -23,9 +23,9 @@ func main() {
 
 	//Evig løkke:
 	for i := 1;  ; i++ {
-		fmt.Println("Venter på signal...")
+	
 		select {
-		default: i++
+		default: fmt.Println("Venter på signal...")
 
 			//Avslutningsmelding ved mottatt signal (Ctrl + C):
 		case <- quitCh:
