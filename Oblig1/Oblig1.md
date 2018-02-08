@@ -214,4 +214,4 @@ I mappen Oppgave 4 i samme fil som i 4a) finner du ascii.go filen med ExtendedAS
 ### Oppgave C. Implementer en test for funksjonen ExtendedASCIIText(String) i egen fil iso_test.go, som tester om input-verdier (av type string) inneholder kun tegn fra en Extended ASCII.
 
 
-I mappen oppgave 4/ascii finner du iso_test.go som tar ut verdiene fra ExtendedASCIItext() og tester om de er i en verdi opp til 0xFF.
+I mappen oppgave 4/ascii finner du iso_test.go som tar ut verdiene fra ExtendedASCIItext() og tester om de er i en verdi i det extended ascii. Alle verdiene er ikke i det extended ascii. € ÷ ¾ er alle i det extended ascii, men " dollar" er tegn som ikke er i det extended ascii.
