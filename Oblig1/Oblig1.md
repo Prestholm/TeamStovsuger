@@ -133,10 +133,11 @@ For eksempel:
 
 **Metode for å gå fra binære tall til desimaltall**
 
-I denne metoden tar vi i bruk følgende formel: *verdi = siffer x grunntall^posisjon*. Når vi har regnt ut hvert siffer summerer vi tallene vi får. 
+I denne metoden tar vi i bruk følgende formel: *verdi = siffer x grunntall^posisjon*. Når vi har regnt ut hvert siffer summerer vi tallene vi får. Binærsystemet har grunntallet 2, og består kun av siffrene 0 og 1. 
 
 
 For eksempel: 
+
 
 
 **Metode for å gå fra desimaltall til binære tall**
@@ -204,7 +205,7 @@ På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet 
 
 På Windows - Som bildet viser øker både CPU og minne litt når programmet kjøres i terminal.
 
-|![Windows](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/terminalloop.png)|
+<img src ="https://gyazo.com/1864717cb228eccaa9611f847d4d861f">
 
 ### Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
 
