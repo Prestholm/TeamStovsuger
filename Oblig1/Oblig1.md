@@ -144,6 +144,17 @@ For eksempel:
 Først deler man tallet på 2. Får man en rest skriver man 1, og dersom man ikke får rest skriver man 0. Så kjører man denne prosessen helt til svaret blir 0. Det ferdige binære tallet leser vi deretter i omvendt rekkefølge, altså nedenfra og opp. 
 
 For eksempel: 
+Ta utgangspunkt i tallet 133.
+- 133/2 = 1
+- 66/2 = 0
+- 33/2 = 1
+- 16/2  = 0
+- 8/2  = 0
+- 4/2 = 0
+- 2 = 0
+- 1/2 = 1
+
+Det binære tallet av 133 blir dermed 10000101. 
 
 
 
