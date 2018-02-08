@@ -201,10 +201,11 @@ På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet 
 -- (legg inn bilder + forsøk på flere enheter) --
 
 På Windows - Som bildet viser øker både CPU og minne litt når programmet kjøres i terminal.
-
+<td>
+ <a href = "https://gyazo.com/1864717cb228eccaa9611f847d4d861f" target = "_blank">==$0
 <img src = "https://gyazo.com/1864717cb228eccaa9611f847d4d861f" alt="Windows" style="maxwidth:100%;">
 
-
+</td>
 ### Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
 
 INT signal ("interrupt", SIGINT) håndteres av programmet fordi vi har spesifikt programmert det til å gjøre det. Denne trigger også avslutningsmeldingen. 
