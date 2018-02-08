@@ -161,7 +161,17 @@ For eksempel:
 Først deler vi tallet på 16. Dersom vi får rest skriver vi ned hva vi får igjen, og dersom vi ikke får rest skriver vi 0. Så starter vi fra begynnelsen igjen helt til svaret blir 0. Til slutt leser vi det heksadesimale tallet vi får nedenfra og opp. Vi kan se sammenhenger mellom denne metoden og metoden for å gå fra desimaltall til binære tall. 
 
 For eksempel: 
+2392: 16 = 149,5
+149 * 16 = 2384
+2392 - 2384 =    8
+8 i heksadesimal er 8
 
+149:16 = 9,3
+9*16 = 144
+149 - 144 = 5
+5 er 5 i heksadesimal
+
+Resten er 9, tallet i heksadesimal blir altså 958
 
 
 ## 2. Forstå algoritmer og utføre "benchmark"-tester på koden.
