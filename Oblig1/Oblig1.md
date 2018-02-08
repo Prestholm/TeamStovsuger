@@ -144,17 +144,7 @@ For eksempel:
 Først deler man tallet på 2. Får man en rest skriver man 1, og dersom man ikke får rest skriver man 0. Så kjører man denne prosessen helt til svaret blir 0. Det ferdige binære tallet leser vi deretter i omvendt rekkefølge, altså nedenfra og opp. 
 
 For eksempel: 
-Ta utgangspunkt i tallet 133. 
-133/2 = 1.
-66/2 = 0
-33/2 = 1
-16/2 = 0
-8/2 = 0
-4/2 = 0
-2/2 = 0
-1/2 = 1
 
-Det binære tallet av 133 er derfor 10000101. 
 
 
 ### Oppgave B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
@@ -209,6 +199,10 @@ Se loop.go i mappen "Oblig1". Den evige løkken skriver ut "venter på signal...
 På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet kjøres i terminal. 
 
 -- (legg inn bilder + forsøk på flere enheter) --
+
+På Windows - Som bildet viser øker både CPU og minne litt når programmet kjøres i terminal.
+
+<img src = "https://gyazo.com/1864717cb228eccaa9611f847d4d861f" alt="Windows" style="maxwidth:100%;">
 
 
 ### Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
