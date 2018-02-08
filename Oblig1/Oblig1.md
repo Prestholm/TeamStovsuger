@@ -205,7 +205,7 @@ På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet 
 
 På Windows - Som bildet viser øker både CPU og minne litt når programmet kjøres i terminal.
 
-(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/terminalloop.png)
+|![Windows](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/terminalloop.png)|
 
 ### Generer ulike avslutningssignaler til prosessen og dokumenter hvilke avslutningskommandoer programmet håndterer og som trigger avslutningsmeldingen.
 
