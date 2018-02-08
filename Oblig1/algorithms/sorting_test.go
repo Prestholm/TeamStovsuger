@@ -19,41 +19,21 @@ func perm(n int) (out []int) {
 	}
 	return
 }
-	// Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
-func BenchmarkBSortM100(b *testing.B) {
-	benchmarkBSortM(200, b)
+// Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
+func BenchmarkBSortMod100(b *testing.B) {
+	benchmarkBSortM(100, b)
 }
 
-func BenchmarkBSortM1000(b *testing.B) {
-	benchmarkBSortM(2000, b)
+func BenchmarkBSortMod1000(b *testing.B) {
+	benchmarkBSortM(1000, b)
 }
 
-func BenchmarkBSortM10000(b *testing.B) {
-	benchmarkBSortM(20000, b)
+func BenchmarkBSortMod10000(b *testing.B) {
+	benchmarkBSortM(10000, b)
 }
-	// Skriv en ny testfunksjon benchmarkBSortModified
+
+// Skriv en ny testfunksjon benchmarkBSortModified
 func benchmarkBSortM(i int, b *testing.B) {
-	for j := 0; j < b.N; j++ {
-		a.StopTimer()
-		values := perm(i)
-		a.StartTimer()
-		Bubble_sort_modified(values)
-	}
-}
-
-func BenchmarkBSort100(b *testing.B) {
-	benchmarkBSort(100, b)
-}
-
-func BenchmarkBSort1000(b *testing.B) {
-	benchmarkBSort(1000, b)
-}
-
-func BenchmarkBSort10000(b *testing.B) {
-	benchmarkBSort(10000, b)
-}
-
-func benchmarkBSort(i int, b *testing.B) {
 	for j := 0; j < b.N; j++ {
 		b.StopTimer()
 		values := perm(i)
@@ -61,6 +41,27 @@ func benchmarkBSort(i int, b *testing.B) {
 		BubbleSort(values)
 	}
 }
+
+//func BenchmarkBSort100(b *testing.B) {
+//	benchmarkBSort(100, b)
+//}
+
+//func BenchmarkBSort1000(b *testing.B) {
+//	benchmarkBSort(1000, b)
+//}
+
+//func BenchmarkBSort10000(b *testing.B) {
+//	benchmarkBSort(10000, b)
+//}
+
+//func benchmarkBSort(i int, b *testing.B) {
+//	for j := 0; j < b.N; j++ {
+//		b.StopTimer()
+//		values := perm(i)
+//		b.StartTimer()
+//		BubbleSort(values)
+//	}
+//}
 
 // Implementasjon av testfunksjoner for Quicksort algoritmen
 func TestQSort(t *testing.T) {
