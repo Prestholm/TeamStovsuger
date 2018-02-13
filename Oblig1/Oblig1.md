@@ -31,7 +31,7 @@
 </td>
 <td style="width: 204px; text-align: center;">
 
-<p>0xD</p>
+<p>D</p>
 
 </td>
 <td style="width: 195px; text-align: center;">
@@ -48,7 +48,7 @@
 </td>
 <td style="width: 204px; text-align: center;">
 
-<p>0xDEA</p>
+<p>DEA</p>
 
 </td>
 <td style="width: 195px; text-align: center;">
@@ -65,7 +65,7 @@
 </td>
 <td style="width: 204px; text-align: center;">
 
-<p>0xAF34</p>
+<p>AF34</p>
 
 </td>
 <td style="width: 195px; text-align: center;">
@@ -82,7 +82,7 @@
 </td>
 <td style="width: 204px; text-align: center;">
 
-<p>0xFFFF</p>
+<p>FFFF</p>
 
 </td>
 <td style="width: 195px; text-align: center;">
@@ -100,7 +100,7 @@
 </td>
 <td style="width: 204px; text-align: center;">
 
-<p>0x1178A</p>
+<p>1178A</p>
 
 </td>
 <td style="width: 195px; text-align: center;">
