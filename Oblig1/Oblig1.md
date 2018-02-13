@@ -122,7 +122,14 @@
 I denne metoden begynner vi bakerst med å dele det binære tallet i grupper på fire siffer hver. Deretter gjør vi hver gruppe med fire siffer i de binære tallene om til hexadesimale tall. Til slutt legger vi tallene og bokstavene vi får sammen i tilsvarende rekkefølge. 
 
 For eksempel: 
+Ta utgangspunkt i det binære tallet 101111101101. 
+```
+1011 = B
+1110 = E
+1101 = D
 
+Det hexadesimale tallet blir dermed ordet BED. 
+```
 
 **Metode for å gå fra hexadesimale tall til binære tall**
 
@@ -202,6 +209,7 @@ Posisjon   Siffer
 Først deler vi tallet på 16. Dersom vi får rest skriver vi ned hva vi får igjen, og dersom vi ikke får rest skriver vi 0. Så starter vi fra begynnelsen igjen helt til svaret blir 0. Til slutt leser vi det heksadesimale tallet vi får nedenfra og opp. Vi kan se sammenhenger mellom denne metoden og metoden for å gå fra desimaltall til binære tall. 
 
 For eksempel: 
+Ta utgangspunkt i tallet 2392. 
 ```
 2392: 16 = 149,5
 149 * 16 = 2384
