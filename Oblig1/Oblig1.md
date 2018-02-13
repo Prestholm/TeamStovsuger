@@ -130,12 +130,12 @@ Først bruker vi hvert enkelt siffer i det hexadesimale tallet til å finne det 
 
 For eksempel: 
 La oss ta utgangspunkt i det hexadesimale tallet BE4D.
-
+```
 B (11) = 1011
 E (14) = 1110
 4 (4)  = 0100
 D (13) = 1101
-
+```
 Slår vi disse sammen får vi det binære tallet 1011 1110 0100 1101. 
 
 
@@ -146,7 +146,7 @@ I denne metoden tar vi i bruk følgende formel: *verdi = siffer x grunntall^posi
 
 For eksempel: 
 Ta utgangspunkt i det binære tallet 100101. 
-
+```
 Posisjon   Siffer
 0           1         1 * 2^0 = 1.  
 1           0         0 * 2^1 = 0. 
@@ -156,7 +156,7 @@ Posisjon   Siffer
 5           1         1 * 2^5 = 32. 
 
 32 + 4 +1 = 37. 
-
+```
 
 
 **Metode for å gå fra desimaltall til binære tall**
@@ -164,10 +164,19 @@ Posisjon   Siffer
 Først deler man tallet på 2. Får man en rest skriver man 1, og dersom man ikke får rest skriver man 0. Så kjører man denne prosessen helt til svaret blir 0. Det ferdige binære tallet leser vi deretter i omvendt rekkefølge, altså nedenfra og opp. 
 
 For eksempel: 
-Ta utgangspunkt i tallet 133. 133/2 = 1. 66/2 = 0 33/2 = 1 16/2 = 0 8/2 = 0 4/2 = 0 2/2 = 0 1/2 = 1
+Ta utgangspunkt i tallet 133. 
+```
+133/2 = 1. 
+66/2 = 0 
+33/2 = 1 
+16/2 = 0 
+8/2 = 0 
+4/2 = 0 
+2/2 = 0 
+1/2 = 1
 
 Det binære tallet av 133 er derfor 10000101.
-
+```
 
 ### Oppgave B. Beskriv kort metoden for å gå fra hexadesimale tall til desimaltall og motsatt.
 
@@ -177,7 +186,7 @@ I denne metoden tar vi, som i metoden fra binære tall til desimaltall, i bruk f
 
 For eksempel: 
 La oss ta utgangspunkt i det engelske ordet BED. 
-
+```
 Posisjon   Siffer
 0           D (13)         13 * 16^0 = 13
 1           E (14)         14 * 16^1 = 224.  
@@ -185,7 +194,7 @@ Posisjon   Siffer
 
 
 13 + 224 + 2816 = 3053. 
-
+```
 
 
 **Metode for å gå fra desimaltall til hexadesimale tall**
@@ -193,8 +202,7 @@ Posisjon   Siffer
 Først deler vi tallet på 16. Dersom vi får rest skriver vi ned hva vi får igjen, og dersom vi ikke får rest skriver vi 0. Så starter vi fra begynnelsen igjen helt til svaret blir 0. Til slutt leser vi det heksadesimale tallet vi får nedenfra og opp. Vi kan se sammenhenger mellom denne metoden og metoden for å gå fra desimaltall til binære tall. 
 
 For eksempel: 
-
-
+```
 2392: 16 = 149,5
 149 * 16 = 2384
 2392 - 2384 =    8
@@ -206,6 +214,7 @@ For eksempel:
 5 er 5 i heksadesimal
 
 Resten er 9, tallet i heksadesimal blir altså 958.
+```
 
 
 ## 2. Forstå algoritmer og utføre "benchmark"-tester på koden.
