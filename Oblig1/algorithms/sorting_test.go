@@ -20,20 +20,41 @@ func perm(n int) (out []int) {
 	return
 }
 // Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
-func BenchmarkBSortMod100(b *testing.B) {
-	benchmarkBSortM(100, b)
+// BenchmarkBSortMod (Mod=Modified)
+func BenchmarkBSortModified100(b *testing.B) {
+	benchmarkBSortModified(100, b)
 }
 
-func BenchmarkBSortMod1000(b *testing.B) {
-	benchmarkBSortM(1000, b)
+func BenchmarkBSortModified1000(b *testing.B) {
+	benchmarkBSortModified(1000, b)
 }
 
-func BenchmarkBSortMod10000(b *testing.B) {
-	benchmarkBSortM(10000, b)
+func BenchmarkBSortModified10000(b *testing.B) {
+	benchmarkBSortModified(10000, b)
 }
-
 // Skriv en ny testfunksjon benchmarkBSortModified
-func benchmarkBSortM(i int, b *testing.B) {
+func benchmarkBSortModified(i int, b *testing.B) {
+	for j := 0; j < b.N; j++ {
+		b.StopTimer()
+		values := perm(i)
+		b.StartTimer()
+		Bubble_sort_modified(values)
+	}
+}
+// BenchmarkBSortOrg (Org=Original)
+func BenchmarkBSort100(b *testing.B) {
+	benchmarkBSort(100, b)
+}
+
+func BenchmarkBSort1000(b *testing.B) {
+	benchmarkBSort(1000, b)
+}
+
+func BenchmarkBSort10000(b *testing.B) {
+	benchmarkBSort(10000, b)
+}
+
+func benchmarkBSort(i int, b *testing.B) {
 	for j := 0; j < b.N; j++ {
 		b.StopTimer()
 		values := perm(i)
@@ -41,27 +62,6 @@ func benchmarkBSortM(i int, b *testing.B) {
 		BubbleSort(values)
 	}
 }
-
-//func BenchmarkBSort100(b *testing.B) {
-//	benchmarkBSort(100, b)
-//}
-
-//func BenchmarkBSort1000(b *testing.B) {
-//	benchmarkBSort(1000, b)
-//}
-
-//func BenchmarkBSort10000(b *testing.B) {
-//	benchmarkBSort(10000, b)
-//}
-
-//func benchmarkBSort(i int, b *testing.B) {
-//	for j := 0; j < b.N; j++ {
-//		b.StopTimer()
-//		values := perm(i)
-//		b.StartTimer()
-//		BubbleSort(values)
-//	}
-//}
 
 // Implementasjon av testfunksjoner for Quicksort algoritmen
 func TestQSort(t *testing.T) {
@@ -74,7 +74,7 @@ func TestQSort(t *testing.T) {
 		t.Fatalf("expected %d, actual is %d", 1, values[0])
 	}
 }
-
+// BenchmarkQSortOrg (Org=Original)
 func BenchmarkQSort100(b *testing.B) {
 	benchmarkQSort(100, b)
 }
