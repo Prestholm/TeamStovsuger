@@ -135,9 +135,9 @@ B (11) = 1011
 E (14) = 1110
 4 (4)  = 0100
 D (13) = 1101
-```
-Slår vi disse sammen får vi det binære tallet 1011 1110 0100 1101. 
 
+Slår vi disse sammen får vi det binære tallet 1011 1110 0100 1101. 
+```
 
 **Metode for å gå fra binære tall til desimaltall**
 
