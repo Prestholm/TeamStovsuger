@@ -129,6 +129,14 @@ For eksempel:
 Først bruker vi hvert enkelt siffer i det hexadesimale tallet til å finne det tilsvarende binære tallet. Til slutt setter vi disse tallene sammen til et helt tall, ved å følge rekkefølgen tallene stod i som hexadesimale tall. Dersom det binære tallet vi får blir langt, deler vi det opp i grupper.
 
 For eksempel: 
+La oss ta utgangspunkt i det hexadesimale tallet BE4D.
+
+B (11) = 1011
+E (14) = 1110
+4 (4)  = 0100
+D (13) = 1101
+
+Slår vi disse sammen får vi det binære tallet 1011 1110 0100 1101. 
 
 
 **Metode for å gå fra binære tall til desimaltall**
@@ -224,7 +232,7 @@ Se loop.go i mappen "Oblig1". Den evige løkken skriver ut "venter på signal...
 ### Hvor mye minne og CPU bruker programmet når det kjører. 
 På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet kjøres i terminal. 
 
--- (legg inn bilder + forsøk på flere enheter) --
+-- (legg inn bilder) --
 
 På Windows - Som bildet viser øker både CPU og minne litt når programmet kjøres i terminal.
 
