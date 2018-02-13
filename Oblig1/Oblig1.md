@@ -241,7 +241,6 @@ Inneholder modifiserte "Benchmark"-tester, relevant til oppgave 2C.
 Resultatene grafisk:
 
 ![Chart1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/GrafiskFremstilling.PNG)
-||
 ![CMD1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Fremstilling_CMD.PNG)
 
 Big-O
