@@ -8,7 +8,7 @@ func Bubble_sort_modified(list []int) {
 	swapped := true
 	for swapped {
 		swapped = false
-		for i := 1; i < n-i; i++ {
+		for i := 1; i < n-1; i++ {
 			if list [i-1] > list[i] {
 				list[i], list[i-1] = list[i-1], list[i]
 				swapped = true
