@@ -241,10 +241,20 @@ Inneholder modifiserte "Benchmark"-tester, relevant til oppgave 2C.
 Resultatene grafisk:
 
 ![Chart1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/GrafiskFremstilling.PNG)
-![CMD1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Fremstilling_CMD.PNG)
 
 Big-O
 
+Ved å gjøre en Big O analyse av algoritmen kan vi fastslå hvor effektivt og godt den skalerer i forhold til størrelsen på progammets innhold. 
+
+Den modifiserte Bubble Sort algoritmen går ut på å gå gjennom listen og sammenligne hvert element med det ved siden av, og hvis elementen ikke står i riktig rekkefølge så bytter den sted. Etter at koden har blitt iterated 1 gang så begynner algoritmen fra begynnelsen men med forskjellig utganspunkt fra den første iterasjonen.
+
+Ut fra Benchmark testen gjort av følgende:
+ BenchmarkBSortM
+ BenchMarkBSort
+ BenchmarkQSort
+Kan vi se at QSort algoritmen er helt klart raskere.
+
+![CMD1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Fremstilling_CMD.PNG)
 
 ## 3. Forstå prosessadministrasjon på en platform. 
 
