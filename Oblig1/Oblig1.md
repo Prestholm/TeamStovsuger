@@ -251,7 +251,7 @@ Den modifiserte Bubble Sort algoritmen går ut på å gå gjennom listen og samm
 Ut fra Benchmark testen gjort av følgende:
 | BenchmarkBSortM
 | BenchMarkBSort
-| BenchmarkQSort
+| BenchmarkQSort,
 Kan vi se at QSort algoritmen er helt klart raskere.
 
 ![CMD1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Fremstilling_CMD.PNG)
