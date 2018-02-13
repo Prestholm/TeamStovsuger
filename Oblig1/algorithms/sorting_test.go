@@ -20,7 +20,7 @@ func perm(n int) (out []int) {
 	return
 }
 // Skriv "benchmark"-tester for benchmarkBSortModified funksjonen
-// BenchmarkBSortMod (Mod=Modified)
+// BenchmarkBSortMod
 func BenchmarkBSortModified100(b *testing.B) {
 	benchmarkBSortModified(100, b)
 }
@@ -41,7 +41,7 @@ func benchmarkBSortModified(i int, b *testing.B) {
 		Bubble_sort_modified(values)
 	}
 }
-// BenchmarkBSortOrg (Org=Original)
+// BenchmarkBSort
 func BenchmarkBSort100(b *testing.B) {
 	benchmarkBSort(100, b)
 }
@@ -74,7 +74,7 @@ func TestQSort(t *testing.T) {
 		t.Fatalf("expected %d, actual is %d", 1, values[0])
 	}
 }
-// BenchmarkQSortOrg (Org=Original)
+// BenchmarkQSort
 func BenchmarkQSort100(b *testing.B) {
 	benchmarkQSort(100, b)
 }
