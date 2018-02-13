@@ -240,13 +240,11 @@ Inneholder modifiserte "Benchmark"-tester, relevant til oppgave 2C.
 ### Oppgave C. Utfør alle benchmark- testene med kommando “go test -bench=.” og presenter resultatene grafisk. Hva kan du si om big-O for alle 3 algoritmene som du har testet?
 Resultatene grafisk:
 
-|![Chart1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/4.PNG)|
-|![CMD1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/3.png)|
+|![Chart1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/3.PNG)|
+|![CMD1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/4.png)|
 
 Big-O
 
-|![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Minne%202.png)|
-|![Mac2](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/CPU%202.png)|
 
 ## 3. Forstå prosessadministrasjon på en platform. 
 
