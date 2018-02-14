@@ -237,9 +237,11 @@ Filen i "algorithms\sorting_test.go" inneholder modifiserte "Benchmark"-tester, 
 
 ### Oppgave C. Utfør alle benchmark- testene med kommando “go test -bench=.” og presenter resultatene grafisk. Hva kan du si om big-O for alle 3 algoritmene som du har testet?
 
-**Resultatene grafisk:**
+**Grafisk fremstiling:**
 
 ![Chart1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/GrafiskFremstilling.PNG)
+
+Informasjonen brukt i den grafiske fremstillingen er hentet fra "Benchmark"- testen og er gjort i CMD, kommandoen brukt er "go test -bench=." Den grafiske fremstillingen viser en stigende graf av hver av algoritmene. Vi kjørte benchmarktesten 4 ganger, med 2000, 4000, 6000 og 8000 iterations.
 
 **Big-O**
 
@@ -250,7 +252,7 @@ Den modifiserte Bubble Sort algoritmen går ut på å gå gjennom listen og samm
 Ut fra Benchmark testen gjort av følgende:
 - | BenchmarkBSortM
 - | BenchMarkBSort
-- | BenchmarkQSort,
+- | BenchmarkQSort
 
 Kan vi se at QSort algoritmen er helt klart raskere.
 
