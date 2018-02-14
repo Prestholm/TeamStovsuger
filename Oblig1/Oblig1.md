@@ -228,15 +228,16 @@ Resten er 9, tallet i heksadesimal blir altså 958.
 ## 2. Forstå algoritmer og utføre "benchmark"-tester på koden.
 
 ### Oppgave A. Skriv en modifisert bubble-sort funksjon benchmarkBSortModified basert på eksempel-funksjon Bubble_sort i filen sorting.go 
-Filen i algorithms\sorting.go inneholder en modifisert Bubble Sort funksjon, relevant til oppgave 2B og 2C.
+Filen i "algorithms\sorting.go" inneholder en modifisert Bubble Sort funksjon, relevant til oppgave 2B og 2C.
 
 
 ### Oppgave B. Skriv "benchmark"-tester for benchmarkBSortModified funksjonen basert på eksempel-funksjon benchmarkBSort i filen sorting_test.go
-Filen i algorithms\sorting_test.go inneholder modifiserte "Benchmark"-tester, relevant til oppgave 2C.
+Filen i "algorithms\sorting_test.go" inneholder modifiserte "Benchmark"-tester, relevant til oppgave 2C.
 
 
 ### Oppgave C. Utfør alle benchmark- testene med kommando “go test -bench=.” og presenter resultatene grafisk. Hva kan du si om big-O for alle 3 algoritmene som du har testet?
-Resultatene grafisk:
+
+**Resultatene grafisk:**
 
 ![Chart1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/GrafiskFremstilling.PNG)
 
@@ -258,16 +259,18 @@ Kan vi se at QSort algoritmen er helt klart raskere.
 ## 3. Forstå prosessadministrasjon på en platform. 
 
 ### Skriv et program som består av en evig løkke. 
-Se loop.go i mappen "Oblig1". Den evige løkken skriver ut "venter på signal..." helt til den mottar et signal. 
+Se "Loop.go" i mappen "Oblig1". Den evige løkken skriver ut "venter på signal..." helt til den mottar et signal. 
 
 
-### Hvor mye minne og CPU bruker programmet når det kjører. 
-På MAC - Som bildet viser øker både CPU og minne betraktelig når programmet kjøres i terminal. 
+### Hvor mye minne og CPU bruker programmet når det kjører.
+**På MAC**
+Som bildet viser øker både CPU og minne betraktelig når programmet kjøres i terminal. 
 
 |![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Minne%202.png)|
 |![Mac2](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/CPU%202.png)|
 
-På Windows - Som bildet viser øker både CPU og minne litt når programmet kjøres i terminal.
+**På Windows**
+CPU og minne øker litt når programmet kjøres i terminal.
 
 |![Windows](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/terminalloop.png)|
 
@@ -285,14 +288,13 @@ QUIT signal (SIGQUIT) håndteres ikke av programmet, og skriver heller ikke ut a
 
 ### Oppgave A. Bruk filen ascii.go i Oblig1 mappen og lag en funksjon som itererer (går i en løkke over)  over tegn med byte-verdier fra 0x80 til 0xFF, dvs. det utvidede ASCII settet. 
 
-I mappen Oppgave 4 ser man filen ascii.go i mappen ascii som kan kjøres via asciimain.go. Dette programmet skal kunne itererer over tegn med byte-verdier fra 0x80 til 0xFF. Utskriften fra funksjonen har de fleste symbolene, noen tegn er utilgjenelige i goland, derfor viser de fram som en boks istedet for et symbol. De binære tallene virker korrekte i forhold til hexadesimalene. 
+I mappen "Oppgave 4" ser man filen "ascii.go" i mappen "ascii" som kan kjøres via asciimain.go. Dette programmet skal kunne iterere over tegn med byte-verdier fra 0x80 til 0xFF. Utskriften fra funksjonen har de fleste symbolene, noen tegn er utilgjenelige i Goland, derfor vises de frem som en boks istedenfor et symbol. De binære tallene virker korrekte i forhold til de hexadesimale tallene. 
 
 
 ### Oppgave B. Lag funksjonen ExtendedASCIIText () i samme filen iso.go, som skriver ut: " € ÷ ¾ dollar "
 
-I mappen Oppgave 4 i samme fil som i 4a) finner du ascii.go filen med ExtendedASCIItext(). Den skal skrive ut "€ ÷ ¾ dollar " fra byte-verdier lagt inn. For å få skrivet ut  € ÷ ¾ dollar, bruker vi x80\xf7\xbe\x64\x6f\x6c\x6c\x61\x72. Den er skrevet og testet først i Windows goland. Noen av symbolene vil ikke vises i kommandovinduet. Resultatene er likt selv i goland, powershell og terminalen. Terminalene har ikke tegnsettet til for alle disse symbolene i sin rekkevidde, derfor vil noen av symbolene være markert som spørsmålstegn i boks, eller bare en boks. Selv tegnesettet i windows-terminalen gir ikke symbolene selv om standarden sier at symbolene fins i settet.
+I mappen "Oppgave 4" i samme fil som i 4a) finner du "ascii.go" filen med ExtendedASCIItext(). Den skal skrive ut "€ ÷ ¾ dollar " fra byte-verdier lagt inn. For å få skrevet ut  € ÷ ¾ dollar, bruker vi x80\xf7\xbe\x64\x6f\x6c\x6c\x61\x72. Den er skrevet og testet først i Windows Goland. Noen av symbolene vil ikke vises i kommandovinduet. Resultatene er like i både goland, powershell og terminalen. Terminalen har ikke tegnsettet for alle disse symbolene i sin rekkevidde, derfor vil noen av symbolene være markert som spørsmålstegn i en boks, eller bare en boks. Tegnesettet i Windows-terminalen viser ikke symbolene selv om standarden sier at symbolene finnes i settet.
 
 ### Oppgave C. Implementer en test for funksjonen ExtendedASCIIText(String) i egen fil iso_test.go, som tester om input-verdier (av type string) inneholder kun tegn fra en Extended ASCII.
 
-
-I mappen oppgave 4/ascii finner du iso_test.go som tar ut verdiene fra ExtendedASCIItext() og tester om de er i en verdi i det extended ascii. Alle verdiene er ikke i det extended ascii. € ÷ ¾ er alle i det extended ascii, men " dollar" er tegn som ikke er i det extended ascii.
+I mappen "oppgave 4/ascii" finner du "iso_test.go" som tar ut verdiene fra ExtendedASCIItext() og tester om de er i en verdi i extended ascii. Alle verdiene er ikke i extended ascii. € ÷ ¾ er alle i extended ascii, men " dollar" er tegn som ikke er i extended ascii.
