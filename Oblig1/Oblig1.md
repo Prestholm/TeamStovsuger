@@ -266,12 +266,14 @@ Se "Loop.go" i mappen "Oblig1". Den evige løkken skriver ut "venter på signal.
 
 ### Hvor mye minne og CPU bruker programmet når det kjører.
 **På MAC**
+
 Som bildet viser øker både CPU og minne betraktelig når programmet kjøres i terminal. 
 
 |![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Minne%202.png)|
 |![Mac2](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/CPU%202.png)|
 
 **På Windows**
+
 CPU og minne øker litt når programmet kjøres i terminal.
 
 |![Windows](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/terminalloop.png)|
