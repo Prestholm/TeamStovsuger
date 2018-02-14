@@ -247,9 +247,10 @@ Ved å gjøre en Big O analyse av algoritmen kan vi fastslå hvor effektivt og g
 Den modifiserte Bubble Sort algoritmen går ut på å gå gjennom listen og sammenligne hvert element med det ved siden av, og hvis elementen ikke står i riktig rekkefølge så bytter den sted. Etter at koden har blitt iterated 1 gang så begynner algoritmen fra begynnelsen men med forskjellig utganspunkt fra den første iterasjonen.
 
 Ut fra Benchmark testen gjort av følgende:
-| BenchmarkBSortM
-| BenchMarkBSort
-| BenchmarkQSort,
+- | BenchmarkBSortM
+- | BenchMarkBSort
+- | BenchmarkQSort,
+
 Kan vi se at QSort algoritmen er helt klart raskere.
 
 ![CMD1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig1/105/Fremstilling_CMD.PNG)
