@@ -1,6 +1,10 @@
 
 # Obligatorisk oppgave 2: 
 
+Medlemmer: 
+- Henning Van Ta.
+- Victor Prestholm.
+- Arian Nuland. 
 
 ## 1. 
 
