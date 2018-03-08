@@ -20,8 +20,9 @@ Medlemmer:
 
 ### Oppgave A. Skriv programmer med navn filecount.go som skal lese en tekst-fil, skrive ut totalt antall linjer og de fem “runes” (bokstaver/tegn) som forekommer mest i filen samt hvor mange ganger de telles i den medfølgende filen text.txt. 
 
+Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler og skriver ut antall linjer og runes som forekommer mest. Vi har forsøkt med flere typer tekstfiler enn "text.txt" for å være sikre på at det fungerer. I bildet under kan du se hvilken format som blir skrevet ut når programmet kjører. 
 
-
+--bilde--
 
 
 ## 3. 
