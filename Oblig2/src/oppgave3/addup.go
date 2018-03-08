@@ -10,7 +10,8 @@ import (
 func main(){
 	numba := flag.Int("a", 100, "int")
 	numbb := flag.Int("b", 20, "int")
-	fmt.Println(*numba, *numbb)
+	// satt standard nummere for a og b til 100 og 20
+	//
 	flag.Parse()
 	c := make(chan int, 2)
 	c <- *numba
