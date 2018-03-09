@@ -9,17 +9,16 @@ import (
 )
 
 func main() {
-// først  go build fileinfo.go
-// kan også bruke go run fileinfo.go -f [filnavn]
+	// først  go build fileinfo.go
+
 	Peker := flag.String("f", "", "filnavn")
 
 	flag.Parse()
- // fileinfo -f [filnavn] ofr å finne fil
+	// fileinfo -f [filnavn] ofr å finne fil
 
-info := *Peker // navn for filnavn
+	info := *Peker
 
-	fmt.Println("Programmet skal returnere informasjon om en fil")
-	file, err := os.Lstat(*Peker) 
+	file, err := os.Lstat(*Peker) // For read access.
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -28,8 +27,8 @@ info := *Peker // navn for filnavn
 	kb := x/1024
 	mb := kb/1024
 	gb := mb/1024
-	fmt.Printf("Info om '%s' : \n", info)
-	fmt.Printf("Størrelse : %.0fB, %fKB, %fMB, %.9fGB \n", x, kb, mb, gb)
+	fmt.Printf("Information about file %s: \n", info)
+	fmt.Printf("Size : %.0fB, %fKB, %fMB, %.9fGB \n", x, kb, mb, gb)
 
 
 	mode :=file.Mode()
@@ -48,11 +47,11 @@ info := *Peker // navn for filnavn
 	} else {
 		fmt.Println("is not regular file")
 	}
-	fmt.Println("Permissions i Unix ",mode)
+	fmt.Println("Has Unix permission bits: ",mode)
 	if append == true{
-		fmt.Println("is append-only")
+		fmt.Println("is append only")
 	} else {
-		fmt.Println("is not append-only")
+		fmt.Println("is not append only")
 	}
 	if dev == true {
 		fmt.Println("is device file")
@@ -65,9 +64,6 @@ info := *Peker // navn for filnavn
 	} else {
 		fmt.Println("is not symbolic link")
 	}
-
-
-
 
 
 }
