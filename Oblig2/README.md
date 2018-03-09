@@ -9,7 +9,7 @@ Medlemmer:
 ## 1. 
 
 ### Oppgave A. Skriv et Golang program med navn fileinfo.go. 
-Returnerer fil-info. Returnerer en error hvis det ikke er noen fil. 
+Returnerer fil-info. Returnerer en error hvis det ikke er noen fil. Finner filen i oppgave1 @ fileinfo.go. 
 
 ### Oppgave B. Lag en kjørbart program (build) av fileinfo.go som kan utføres fra kommandolinje.
 Oppgave b, bruker command-line flag parsing og file-path. Alt man trenger å gjøre er å builde og så kjøre den filen du vil ha info om ved "fileinfo -f [filinfo]". Slik drar programmet info fram om filen, størrelse og hva slags type fil etc.
