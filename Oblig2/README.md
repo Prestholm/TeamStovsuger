@@ -13,6 +13,7 @@ Returnerer fil-info. Returnerer en error hvis det ikke er noen fil. Finner filen
 
 ### Oppgave B. Lag en kjørbart program (build) av fileinfo.go som kan utføres fra kommandolinje.
 Oppgave b, bruker command-line flag parsing og file-path. Alt man trenger å gjøre er å builde og så kjøre den filen du vil ha info om ved "fileinfo -f [filinfo]". Slik drar programmet info fram om filen, størrelse og hva slags type fil etc.
+Oppgave 1b er gjort litt anderledes enn de andre oppgavene. Her bruker man Flags for å finne fil-navn. Det er ikke nødvendig å bruke flags her, oppgaven kan løses ved å bruke vanlig os.args[1]. 
 |![oppg1](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/terminal.png)|
 
 ## 2. 
