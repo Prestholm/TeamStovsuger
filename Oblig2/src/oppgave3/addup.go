@@ -21,7 +21,7 @@ func main(){
 	if nummer1 <= 0 {
 		fmt.Println("Error, du må skrive inn et tall, eller et tall som er høyere enn 0")
 	}
-	fmt.Println("Skriv inn et nummer: ")
+	fmt.Println("Skriv inn et nummer til: ")
 	fmt.Scan(&nummer2)
 	if nummer2 <= 0 {
 		fmt.Println("Error, du må skrive inn et tall, eller et tall som er høyere enn 0")
@@ -39,9 +39,9 @@ func main(){
 	if h <= 0 {
 		fmt.Println("Error, du må skrive inn som er høyere enn 0")
 	}
-	fmt.Println("Resultatet er: ", h)
-	run:=<-sign
-	fmt.Print(run)
+	fmt.Println("Resultatet er: ", h, " (Bruk ctrl+c for å stoppe programmet)")
+	<-sign
+	fmt.Print("Programmet er stoppet.")
 }
 //Via flags blir disse 2 tallene lagt sammen og sendt tilbake til func main
 func b(c chan int){
