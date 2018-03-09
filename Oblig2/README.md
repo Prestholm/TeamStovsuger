@@ -27,11 +27,10 @@ Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler o
 
 ![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/filecount.png)
 
-
 ## Oppgave 3. 
 
 ### A. Skriv et program med navn addup.go bestående av to go funksjoner og kommunisere med hverandre gjennom channels
-Se "(filnavn).go" i mappen "Oblig2/src/oppgave3/".
+Se "addup.go" i mappen "Oblig2/src/oppgave3/".
 
 ![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D1.png)
 
@@ -60,3 +59,9 @@ Begge programmen stoppes ved bruk av tastene "ctrl+c". Og begge programmene send
 ### E. Bygg filene som i oppgave 1 og 2 til kjørbare filer på ditt operativsystem og legg dem ved i /bin mappen.
 
 Se i mappen "Oblig2/src/bin/".
+
+Ved å kjøre denne kommandoen i terminalen:"go build <filnavn.go>"
+Kan man generere en exectuable.
+Vi gjorde følgende fra terminalen:
+go build addup.go
+go build addtofile.go sumfromfile.go ("denne er for å sette sammen to programmer til étt program.
