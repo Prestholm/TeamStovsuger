@@ -58,7 +58,7 @@ func checkErr(e error) {
 		panic(e)
 	}
 }
-	// nummer 1 og nummer 2 blir så lagt sammen og representert i en egen fil, eller i terminalen
+// nummer 1 og nummer 2 blir så lagt sammen og representert i en egen fil, eller i terminalen
 func readResult(path string) {
 	//Ved bruk av SIGINT kan vi stoppe exectuablen, sånn at vi kan lese hva resultatet er
 	sign :=make(chan os.Signal, 1)
@@ -72,7 +72,7 @@ func readResult(path string) {
 	resultat, err := strconv.Atoi(temp)
 	checkErr(err)
 
-	fmt.Println("Resultatet er: ", resultat)
-	run:=<-sign
-	fmt.Print(run)
+	fmt.Println("Resultatet er: ", resultat, " (Bruk ctrl+c for å stoppe programmet)")
+	<-sign
+	fmt.Print("Programmet er stoppet.")
 }
