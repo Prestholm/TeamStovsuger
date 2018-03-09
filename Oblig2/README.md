@@ -30,12 +30,12 @@ Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler o
 ## Oppgave 3. 
 
 ### A. Skriv et program med navn addup.go bestående av to go funksjoner og kommunisere med hverandre gjennom channels
-Se "addup.go" i mappen "Oblig2/src/oppgave3/".
+Se "addup.go" i mappen "Oblig2/src/oppgave3/". Denne bruker fmt.scan for å få inn nummere fra terminalen. i forhold til oppgave 1 og 2 som bruker flags og os.args[]. 
 
 ![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D1.png)
 
 ### B. Skriv to programmer (addtofile.go og sumfromfile.go) som kommuniserer med hverandre gjennom en fil.
-Se "addtofile.go" og "sumfromfile.go" i mappen "Oblig2/src/oppgave3/".
+Se "addtofile.go" og "sumfromfile.go" i mappen "Oblig2/src/oppgave3/". Oppgave 3b henter info fra terminalen på samme måte som oppg3a, ved fmt.scan. 
 
 ![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D2.png)
 
