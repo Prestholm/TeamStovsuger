@@ -31,10 +31,10 @@ func sumfromfile()  {
 	//Deretter tar programmet og legger dem sammen
 	input1 := lines[0]
 	input2 := lines[1]
-	tall1,_ := strconv.Atoi(input1)
-	tall2,_ := strconv.Atoi(input2)
+	nummer1,_ := strconv.Atoi(input1)
+	nummer2,_ := strconv.Atoi(input2)
 
-	result := tall1 + tall2
+	result := nummer1 + nummer2
 
 
 	f, err := os.OpenFile("resultat.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
