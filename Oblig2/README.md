@@ -33,20 +33,20 @@ Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler o
 ### A. Skriv et program med navn addup.go bestående av to go funksjoner og kommunisere med hverandre gjennom channels
 Se "(filnavn).go" i mappen "Oblig2/src/oppgave3/".
 
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D1.png)
+![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D1.png)
 
 ### B. Skriv to programmer (addtofile.go og sumfromfile.go) som kommuniserer med hverandre gjennom en fil.
 Se "addtofile.go" og "sumfromfile.go" i mappen "Oblig2/src/oppgave3/".
 
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D2.png)
+![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D2.png)
 
 ### C. Beskriv og implementer feilhåndtering på all I/O i oppgave a) og b).
 Se "addup.go", "addtofile.go" og "sumfromfile.go" i mappen "Oblig2/src/oppgave3/".
 
 Feilhåndteringen sørger for at tall 0 er den eneste input verdien man kan sette. Dersom man setter inn en verdi av type string eller en verdi under 0 vil man få opp feilmeldingen og programmet avsluttes. Dette vil man få opp både for nummer1 og nummer2. Denne feilhåndteringen representeres både i "addup.go" og "addtofile.go".
 
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D3.png)
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D4.png)
+![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D3.png)
+![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D4.png)
 
 ### D. Implementer håndtering av SIGINT i programmene i a) og b); programmene skal skrive ut en avslutningsmelding dersom de mottar SIGINT før de fullfører naturlig.
 Se "addup.go" og "addtofile.go" i mappen "Oblig2/src/oppgave3/".
@@ -54,8 +54,8 @@ Se "addup.go" og "addtofile.go" i mappen "Oblig2/src/oppgave3/".
 Ved å ta i bruk SIGINT har brukeren mulighet til å stoppe programmet, dette fungerer bra om man kjører programmets executable fordi man har da mulighet til å se resultatet, uten at programmet lukker seg før du har sett det.
 Begge programmen stoppes ved bruk av tastene "ctrl+c". Og begge programmene sender ut den samme avslutningsmeldingen.
 
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D6.png)
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D5.png)
+![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D6.png)
+![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/D5.png)
 
 ### E. Bygg filene som i oppgave 1 og 2 til kjørbare filer på ditt operativsystem og legg dem ved i /bin mappen.
 
