@@ -10,16 +10,16 @@ import (
 
 func main() {
 // først  go build fileinfo.go
-
+// kan også bruke go run fileinfo.go -f [filnavn]
 	Peker := flag.String("f", "", "filnavn")
 
 	flag.Parse()
  // fileinfo -f [filnavn] ofr å finne fil
 
-info := *Peker
+info := *Peker // navn for filnavn
 
 	fmt.Println("Programmet skal returnere informasjon om en fil")
-	file, err := os.Lstat(*Peker) // For read access.
+	file, err := os.Lstat(*Peker) 
 	if err != nil {
 		log.Fatal(err)
 	}
