@@ -27,7 +27,7 @@ Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler o
 ## 3. 
 
 ### Oppgave A. Skriv et program med navn addup.go bestående av to go funksjoner og kommunisere med hverandre gjennom channels
-
+Filen addup.go ligger i mappen oppgave 3. Filen har to funksjoner "main" og "b" som kommuniserer med hverandre og legger sammen to tall som blir angitt i terminalen.
 
 ### Oppgave B. Skriv to programmer (addtofile.go og sumfromfile.go) som kommuniserer med hverandre gjennom en fil.
 
