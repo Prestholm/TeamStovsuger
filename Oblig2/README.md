@@ -58,7 +58,5 @@ Se "(filnavn).go" og "(filnavn).go" i mappen "Oblig2/src/oppgave3/".
 
 Se i mappen "Oblig2/src/bin/".
 
-Se "(filnavn).go" og "(filnavn).go" i mappen "Oblig2/src/oppgave3/".
-
 ---(skriv litt rundt dette)---
 
