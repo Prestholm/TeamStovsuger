@@ -34,14 +34,15 @@ func sumfromfile()  {
 	nummer1,_ := strconv.Atoi(input1)
 	nummer2,_ := strconv.Atoi(input2)
 
-	result := nummer1 + nummer2
-
-
+	resultat := nummer1 + nummer2
+	if resultat <= 0 {
+		fmt.Println("Error, du må skrive inn tall som er høyere enn 0")
+	}
 	f, err := os.OpenFile("resultat.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
-	if _, err := fmt.Fprintf(f,"\n%d\n", result); err != nil {
+	if _, err := fmt.Fprintf(f,"\n%d\n", resultat); err != nil {
 		log.Fatal(err)
 	}
 
