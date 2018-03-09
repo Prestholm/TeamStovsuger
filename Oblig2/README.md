@@ -20,7 +20,7 @@ Oppgave 1b er gjort litt anderledes enn de andre oppgavene. Her bruker man Flags
 
 ### Oppgave A. Skriv programmer med navn filecount.go som skal lese en tekst-fil, skrive ut totalt antall linjer og de fem “runes” (bokstaver/tegn) som forekommer mest i filen samt hvor mange ganger de telles i den medfølgende filen text.txt. 
 
-Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler og skriver ut antall linjer og runes som forekommer mest. Vi har forsøkt med flere typer tekstfiler enn "text.txt" for å være sikre på at det fungerer. I bildet under kan du se hvilken format som blir skrevet ut når programmet kjører. 
+Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler og skriver ut antall linjer og runes som forekommer mest. Vi har forsøkt med flere typer tekstfiler enn "text.txt" for å være sikre på at det fungerer. I bildet under kan du se hvilken format som blir skrevet ut når programmet kjører. Oppgave 2 bruker os.args[1] istedet for flag parsing slik som oppgave 1 bruker.
 
 |![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/filecount.png)|
 
