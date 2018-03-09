@@ -9,7 +9,7 @@ Medlemmer:
 ## 1. 
 
 ### Oppgave A. Skriv et Golang program med navn fileinfo.go. 
-Returnerer fil-info. Returnerer en error hvis det ikke er noen fil. Finner filen i oppgave1 @ fileinfo.go. 
+Se "fileinfo.go" i mappen "Oblig2/src/oppgave1/". Programmet returnerer detaljert informasjon om en fil. Den skriver ut en error det det ikke er valgt noen fil. 
 
 ### Oppgave B. Lag en kjørbart program (build) av fileinfo.go som kan utføres fra kommandolinje.
 Oppgave b, bruker command-line flag parsing. Alt man trenger å gjøre er å builde og så kjøre den filen du vil ha info om ved "fileinfo -f [filnavn]", eller ved "go run fileinfo.go -f [filnavn]" men dette lager ikke en executable. Slik drar programmet info fram om filen, størrelse og hva slags type fil etc.
@@ -29,10 +29,10 @@ Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler o
 ## 3. 
 
 ### Oppgave A. Skriv et program med navn addup.go bestående av to go funksjoner og kommunisere med hverandre gjennom channels
-Filen addup.go ligger i mappen oppgave 3. Filen har to funksjoner "main" og "b" som kommuniserer med hverandre og legger sammen to tall som blir angitt i terminalen.
+Se "(filnavn).go" i mappen "Oblig2/src/oppgave3/".
 
 ### Oppgave B. Skriv to programmer (addtofile.go og sumfromfile.go) som kommuniserer med hverandre gjennom en fil.
-
+Se "(filnavn).go" i mappen "Oblig2/src/oppgave3/".
 
 
 ### Oppgave C. Beskriv og implementer feilhåndtering på all I/O i oppgave a) og b).
@@ -40,9 +40,9 @@ Filen addup.go ligger i mappen oppgave 3. Filen har to funksjoner "main" og "b" 
 
 
 ### Oppgave D. Implementer håndtering av SIGINT i programmene i a) og b); programmene skal skrive ut en avslutningsmelding dersom de mottar SIGINT før de fullfører naturlig.
-
+Se "(filnavn).go" og "(filnavn).go" i mappen "Oblig2/src/oppgave3/".
 
 
 ### Oppgave E. Bygg filene som i oppgave 1 og 2 til kjørbare filer på ditt operativsystem og legg dem ved i /bin mappen.
 
-
+Se i mappen "Oblig2/src/bin/".
