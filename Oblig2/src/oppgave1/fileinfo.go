@@ -5,22 +5,21 @@ import (
 	"os"
 	"log"
 	"flag"
-	"path/filepath"
+
 )
 
 func main() {
 // først  go build fileinfo.go
 
-	filePeker := flag.String("f", "", "filnavn")
+	Peker := flag.String("f", "", "filnavn")
+
 	flag.Parse()
  // fileinfo -f [filnavn] ofr å finne fil
-	path, err := filepath.Abs(*filePeker)
-	if err !=nil {
-		log.Fatal(err)
-	}
+
+info := *Peker
 
 	fmt.Println("Programmet skal returnere informasjon om en fil")
-	file, err := os.Lstat(*filePeker) // For read access.
+	file, err := os.Lstat(*Peker) // For read access.
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -29,7 +28,7 @@ func main() {
 	kb := x/1024
 	mb := kb/1024
 	gb := mb/1024
-	fmt.Printf("Info om '%s' : \n", path)
+	fmt.Printf("Info om '%s' : \n", info)
 	fmt.Printf("Størrelse : %.0fB, %fKB, %fMB, %.9fGB \n", x, kb, mb, gb)
 
 
@@ -66,7 +65,6 @@ func main() {
 	} else {
 		fmt.Println("is not symbolic link")
 	}
-
 
 
 
