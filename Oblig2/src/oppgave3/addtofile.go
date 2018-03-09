@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 	"strings"
 	"strconv"
+	"os/signal"
+	"syscall"
 )
 
 func main() {
@@ -20,10 +22,16 @@ func addtofile() {
 	var nummer2 int
 
 	//I terminal så skriver brukeren inn 2 tall, nummer 1 & nummer 2
-	fmt.Println("Skriv inn nummer: ")
+	fmt.Println("Skriv inn et nummer: ")
 	fmt.Scan(&nummer1)
-	fmt.Println("Skriv inn nummer: ")
+	if nummer1 <= 0 {
+		fmt.Println("Error, du må skrive inn et tall, eller et tall som er høyere enn 0")
+	}
+	fmt.Println("Skriv inn et nummer: ")
 	fmt.Scan(&nummer2)
+	if nummer1 <= 0 {
+		fmt.Println("Error, du må skrive inn et tall, eller et tall som er høyere enn 0")
+	}
 
 	//resultat.txt blir generert og tallene blir lagt inn
 	file, err := os.Create("resultat.txt")
@@ -52,6 +60,10 @@ func checkErr(e error) {
 }
 	// nummer 1 og nummer 2 blir så lagt sammen og representert i en egen fil, eller i terminalen
 func readResult(path string) {
+	//Ved bruk av SIGINT kan vi stoppe exectuablen, sånn at vi kan lese hva resultatet er
+	sign :=make(chan os.Signal, 1)
+	signal.Notify(sign, syscall.SIGINT)
+
 	data, err := ioutil.ReadFile(path)
 	checkErr(err)
 	tempData := string(data)
@@ -60,5 +72,7 @@ func readResult(path string) {
 	resultat, err := strconv.Atoi(temp)
 	checkErr(err)
 
-	fmt.Println("Resultat: ", resultat)
+	fmt.Println("Resultatet er: ", resultat)
+	run:=<-sign
+	fmt.Print(run)
 }
