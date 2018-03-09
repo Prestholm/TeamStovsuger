@@ -61,7 +61,7 @@ Begge programmen stoppes ved bruk av tastene "ctrl+c". Og begge programmene send
 Se i mappen "Oblig2/src/bin/".
 
 Ved å kjøre denne kommandoen i terminalen:"go build <filnavn.go>"
-  Kan man generere en exectuable.
-  Vi gjorde følgende fra terminalen:
-  | go build addup.go
-  | go build addtofile.go sumfromfile.go ("denne er for å sette sammen to programmer til étt program.
+Kan man generere en exectuable.
+Vi gjorde følgende fra terminalen:
+  go build addup.go
+  go build addtofile.go sumfromfile.go | ("denne er for å sette sammen to programmer til étt program.
