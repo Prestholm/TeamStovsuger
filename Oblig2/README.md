@@ -13,7 +13,7 @@ Se "fileinfo.go" i mappen "Oblig2/src/oppgave1/". Programmet returnerer detaljer
 
 ![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig2/src/Bilder/fileinfo.png)
 
-### Oppgave B. Lag en kjørbart program (build) av fileinfo.go som kan utføres fra kommandolinje.
+### Oppgave B. Lag et kjørbart program (build) av fileinfo.go som kan utføres fra kommandolinje.
 I denne oppgaven bruker vi command-line flag parsing. Alt man trenger å gjøre er å builde og så kjøre den filen du vil ha info om ved "fileinfo -f [filnavn]", eller ved "go run fileinfo.go -f [filnavn]" (men dette lager ikke en executable). Slik henter programmet info om filen, dens størrelse og hva slags type fil etc.
 
 Oppgave 1b er gjort litt anderledes enn de andre oppgavene. Her bruker vi Flags for å finne filnavn. Det er ikke nødvendig å bruke flags her, oppgaven kan også løses ved å bruke vanlig os.args[1] som i oppgave 2. 
@@ -21,7 +21,7 @@ Oppgave 1b er gjort litt anderledes enn de andre oppgavene. Her bruker vi Flags 
 
 ## Oppgave 2. 
 
-### A. Skriv programmer med navn filecount.go som skal lese en tekst-fil, skrive ut totalt antall linjer og de fem “runes” (bokstaver/tegn) som forekommer mest i filen samt hvor mange ganger de telles i den medfølgende filen text.txt. 
+### A. Skriv et program med navn filecount.go som skal lese en tekst-fil, skrive ut totalt antall linjer og de fem “runes” (bokstaver/tegn) som forekommer mest i filen samt hvor mange ganger de telles i den medfølgende filen text.txt. 
 
 Se "filecount.go" i mappen "Oblig2/src/oppgave2/". Programmet leser tekstfiler og skriver ut antall linjer og runes som forekommer mest. Vi har forsøkt med flere typer tekstfiler enn "text.txt" for å være sikre på at det fungerer. I bildet under kan du se hvilken format som blir skrevet ut når programmet kjører. Oppgave 2 bruker os.args[1] istedet for flag parsing slik som oppgave 1 bruker.
 
