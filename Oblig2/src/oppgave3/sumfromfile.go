@@ -22,7 +22,7 @@ func readLines(path string) ([]string, error) {
 	}
 	return lines, scanner.Err()
 }
-	//Ved bruk av funksjonen readLines kjøres da programmet til å lese linjene i resultat.txt
+//Ved bruk av funksjonen readLines kjøres da programmet til å lese linjene i resultat.txt
 func sumfromfile()  {
 	lines, err := readLines("resultat.txt")
 	if err != nil {
