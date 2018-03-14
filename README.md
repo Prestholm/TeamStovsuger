@@ -34,3 +34,11 @@ Oppgavesett 1 - Oppgave 3:
      Inne i f.eks en Main-metode kan man bruke ":=" for å forkorte bruken av "var" - "i := 3" eller "hei := false". Erklærte variabler som 
      ikke er blitt gitt en spesifikk verdi er null eller false. 
   
+  
+  Oppgavesett 2:
+----------------------------
+
+**1. Lag din egen applikasjon som endrer bakgrunnsfarge hver gang man trykker på skjermen.**
+
+
+
