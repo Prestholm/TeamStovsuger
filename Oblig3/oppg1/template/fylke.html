@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fylke</title>
+
+
+<body><table class = "what">
+    <tr>
+        <th>ID:{{.ID}}</th>
+        <th>Label{{.Label}}</th>
+        <th>Lang:{{.Lang}}</th>
+        <th>Contentsummary:{{.Contentsummary}}</th>
+        <th>Owner:{{.Owner}}</th>
+        <th>Manager:{{.Manager}}</th>
+        <th>ContainedItemClass:{{.ContainedItemClass}}</th>
+        <th>UUID:{{.UUID}}</th>
+    </tr>
+    <tbody>{{range $.Containeditems}}
+    <tr>
+        <th>ID: {{.ID}}
+        </th>
+        <th>Label: {{.Label}}</th>
+        <th>Lang:{{.Lang}}</th>
+        <th>Itemclass: {{.Itemclass}}</th>
+        <th>UUID:{{.UUID}}</th>
+        <th>Status:{{.Status}}</th>
+        <th>Description: {{.Description}}</th>
+        <th>Owner:{{.Owner}}</th>
+        <th>VersionNumber:{{.VersionNumber}}</th>
+        <th>Version:{{.Versions}}</th>
+        <th>Lastupdate:{{.Lastupdate}}</th>
+        <th>Datesubmittet:{{.DateSubmitted}}</th>
+        <th>DateAccepted:{{.DateAccepted}}</th>
+        <th>Codevalue:{{.Codevalue}}</th>
+        <th>Narrower:{{.Narrower}}</th>
+        <th>AlertDate:{{.AlertDate}}</th>
+        <th>EffectiveDate:{{.EffectiveDate}}</th>
+        <th>ValidFrom:{{.ValudFrom}}</th>
+        <th>ValidTo:{{.ValidTo}}</th>
+    </tr>
+    {{end}}
+    </tbody>
+</table>
+</body>
+</html>
