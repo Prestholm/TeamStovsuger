@@ -16,7 +16,7 @@ Den er satt opp med if err := http.ListenAndServe(":8080", nil); err != nil {
 
 ### Oppgave B. Når klienter aksesserer webserveren på path lik "/" skal klienten få tilbake strengen "Hello, client". Strengen skal vises i nettleseren.
 
-Ved localhost:8080 får vi Hello, client strengen fram.
+Ved localhost:8080 får vi "Hello, client" strengen fram.
 
 
 ## Oppgave 2. 
