@@ -10,16 +10,24 @@ Medlemmer:
 
 ### A. Sett opp en webserver som lytter til port 8080.
 
+Den er satt opp med if err := http.ListenAndServe(":8080", nil); err != nil {
+		panic(err)
+	}
 
 ### Oppgave B. Når klienter aksesserer webserveren på path lik "/" skal klienten få tilbake strengen "Hello, client". Strengen skal vises i nettleseren.
+
+Ved localhost:8080 får vi Hello, client strengen fram.
 
 
 ## Oppgave 2. 
 
 ### A. Presenter data på webserveren slik at den er leselig for mennesker når klienter aksesserer stiene /1, /2, /3, /4, /5.
 
+Dataen er hentet fra 5 ulike apier, og er leselig for mennesker ved bruk av html.
+
 ### B. Samtlige stier i oppgave 2 skal rendres til klienter ved bruk av Go templates.
 
+Ved bruk av html lager vi format slik at det kan rendres til klienter ved bruk av html-teplatesene.
 
 ## Oppgave 3. 
 
