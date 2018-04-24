@@ -37,11 +37,11 @@ Kommandoer brukt for å få serveren til å responde:
 
 Visualisert i Linux med innebygd nmap(ncat).
 
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig3/Bilder/6ca6423f65a32074e60b61d4bfd0e9cc.png)
+![Linux](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig3/Bilder/6ca6423f65a32074e60b61d4bfd0e9cc.png)
 
 Visualisert i Windows med nedlastet nmap(ncat).
 
-!(https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig3/Bilder/b0702e286232c1515c9a43f6947e5040.png)
+![Windows](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig3/Bilder/b0702e286232c1515c9a43f6947e5040.png)
 
 (Lokal IPen er annerledes fordi jeg har byttet internett imellom bildene).
 
