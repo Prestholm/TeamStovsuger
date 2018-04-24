@@ -10,24 +10,16 @@ Medlemmer:
 
 ### A. Sett opp en webserver som lytter til port 8080.
 
-Den er satt opp med if err := http.ListenAndServe(":8080", nil); err != nil {
-		panic(err)
-	}
 
 ### Oppgave B. Når klienter aksesserer webserveren på path lik "/" skal klienten få tilbake strengen "Hello, client". Strengen skal vises i nettleseren.
-
-Ved localhost:8080 får vi "Hello, client" strengen fram.
 
 
 ## Oppgave 2. 
 
 ### A. Presenter data på webserveren slik at den er leselig for mennesker når klienter aksesserer stiene /1, /2, /3, /4, /5.
 
-Dataen er hentet fra 5 ulike apier, og er leselig for mennesker ved bruk av html.
-
 ### B. Samtlige stier i oppgave 2 skal rendres til klienter ved bruk av Go templates.
 
-Ved bruk av html lager vi format slik at det kan rendres til klienter ved bruk av html-teplatesene.
 
 ## Oppgave 3. 
 
@@ -39,11 +31,10 @@ Ved å ta i bruk programmer som ligner på nmap(ncat) så får man muligheten ti
 
 Kommandoer brukt for å få serveren til å responde:
 
-// Commando i netcat(CMD) for tcp: netcat -z -v <ip> <port>
-
-// Commando i netcat(CMD) for udp: netcat -z -v -u <ip> <port>
-
-// Commando i CMD for tcp: telnet <ip> <port>
+Kommandoer
+- Kommando i netcat(CMD) for tcp: netcat -z -v ip port
+- Kommando i netcat(CMD) for udp: netcat -z -v -u ip port
+- Kommando i CMD for tcp: telnet ip port 
 
 Visualisert i Linux med innebygd nmap(ncat).
 
