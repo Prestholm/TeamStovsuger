@@ -32,7 +32,9 @@ Ved å ta i bruk programmer som ligner på nmap(ncat) så får man muligheten ti
 Kommandoer brukt for å få serveren til å responde:
 
 // Commando i netcat(CMD) for tcp: netcat -z -v <ip> <port>
+
 // Commando i netcat(CMD) for udp: netcat -z -v -u <ip> <port>
+
 // Commando i CMD for tcp: telnet <ip> <port>
 
 Visualisert i Linux med innebygd nmap(ncat).
