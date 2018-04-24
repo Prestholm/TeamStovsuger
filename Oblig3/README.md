@@ -43,7 +43,6 @@ Ved å ta i bruk programmer som ligner på nmap(ncat) så får man muligheten ti
 
 Kommandoer brukt for å få serveren til å responde:
 ```
-Kommandoer:
 - Kommando i netcat(CMD) for tcp: netcat -z -v ip port
 - Kommando i netcat(CMD) for udp: netcat -z -v -u ip port
 - Kommando i CMD for tcp: telnet ip port 
