@@ -7,6 +7,8 @@ import (
 	"log"
 	"io/ioutil"
 	"encoding/json"
+
+	"html/template"
 )
 
 
@@ -28,7 +30,9 @@ func main() {
 	}
 
 
+
 }
+
 
 func side1(w http.ResponseWriter, r *http.Request){
 	url := "http://api.open-notify.org/astros.json"
@@ -42,7 +46,6 @@ func side1(w http.ResponseWriter, r *http.Request){
 		log.Fatal(err)
 	}
 
-	req.Header.Set("User-Agent", "spacecount-tutorial")
 
 	res, getErr := spaceClient.Do(req)
 	if getErr != nil {
@@ -59,11 +62,14 @@ func side1(w http.ResponseWriter, r *http.Request){
 	if jsonErr != nil {
 		log.Fatal(jsonErr)
 	}
-	b, err := json.Marshal(people1)
-	s:= string(b)
-
-	fmt.Fprint(w, s)
-
+	tpl.ParseFiles("People.html")
+	if err != nil{
+		log.Print(err)
+	}
+	tpl.ExecuteTemplate(w, "People.html", people1)
+	if err != nil{
+		log.Fatal(err)
+	}
 }
 func side2(w http.ResponseWriter, r *http.Request){
 
@@ -77,7 +83,6 @@ func side2(w http.ResponseWriter, r *http.Request){
 		log.Fatal(err)
 	}
 
-	req.Header.Set("User-Agent", "spacecount-tutorial")
 
 	res, getErr := spaceClient.Do(req)
 	if getErr != nil {
@@ -95,10 +100,16 @@ func side2(w http.ResponseWriter, r *http.Request){
 		log.Fatal(jsonErr)
 	}
 
-	b, err := json.Marshal(entries1)
-	s:= string(b)
 
-	fmt.Fprint(w, s)
+	tpl.ParseFiles("Entries.html")
+	if err != nil{
+		log.Print(err)
+	}
+	tpl.ExecuteTemplate(w, "Entries.html", entries1)
+	if err != nil{
+		log.Fatal(err)
+	}
+
 }
 func side3(w http.ResponseWriter, r *http.Request){
 
@@ -112,7 +123,6 @@ func side3(w http.ResponseWriter, r *http.Request){
 		log.Fatal(err)
 	}
 
-	req.Header.Set("User-Agent", "spacecount-tutorial")
 
 	res, getErr := spaceClient.Do(req)
 	if getErr != nil {
@@ -129,11 +139,14 @@ func side3(w http.ResponseWriter, r *http.Request){
 	if jsonErr != nil {
 		log.Fatal(jsonErr)
 	}
-
-	b, err := json.Marshal(fylke1)
-	s:= string(b)
-
-	fmt.Fprint(w, s)
+	tpl.ParseFiles("fylke.html")
+	if err != nil{
+		log.Print(err)
+	}
+	tpl.ExecuteTemplate(w, "fylke.html", fylke1)
+	if err != nil{
+		log.Fatal(err)
+	}
 }
 func side4(w http.ResponseWriter, r *http.Request){
 
@@ -147,7 +160,6 @@ func side4(w http.ResponseWriter, r *http.Request){
 		log.Fatal(err)
 	}
 
-	req.Header.Set("User-Agent", "spacecount-tutorial")
 
 	res, getErr := spaceClient.Do(req)
 	if getErr != nil {
@@ -164,15 +176,18 @@ func side4(w http.ResponseWriter, r *http.Request){
 	if jsonErr != nil {
 		log.Fatal(jsonErr)
 	}
-
-	b, err := json.Marshal(jon1)
-	s:= string(b)
-
-	fmt.Fprint(w, s)
+	tpl.ParseFiles("jon.html")
+	if err != nil{
+		log.Print(err)
+	}
+	tpl.ExecuteTemplate(w, "jon.html", jon1)
+	if err != nil{
+		log.Fatal(err)
+	}
 }
 func side5(w http.ResponseWriter, r *http.Request){
 
-	url := "https://hotell.difi.no/api/json/_all"
+	url := "https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty"
 	spaceClient := http.Client{
 		Timeout: time.Second * 2, // Maximum of 2 secs
 	}
@@ -182,7 +197,6 @@ func side5(w http.ResponseWriter, r *http.Request){
 		log.Fatal(err)
 	}
 
-	req.Header.Set("User-Agent", "spacecount-tutorial")
 
 	res, getErr := spaceClient.Do(req)
 	if getErr != nil {
@@ -200,10 +214,15 @@ func side5(w http.ResponseWriter, r *http.Request){
 		log.Fatal(jsonErr)
 	}
 
-	b, err := json.Marshal(hotel1)
-	s:= string(b)
 
-	fmt.Fprint(w, s)
+	tpl.ParseFiles("hotel.html")
+	if err != nil{
+		log.Print(err)
+	}
+	tpl.ExecuteTemplate(w, "hotel.html", hotel1)
+	if err != nil{
+		log.Fatal(err)
+	}
 }
 
 
@@ -282,10 +301,19 @@ type JonUmber struct {
 	TvSeries    []string      `json:"tvSeries"`
 	PlayedBy    []string      `json:"playedBy"`
 }
-type hotel []struct {
-	ShortName string `json:"shortName"`
-	Name      string `json:"name"`
-	Location  string `json:"location"`
-	Updated   int    `json:"updated"`
-	Dataset   bool   `json:"dataset"`
+type hotel struct {
+	By          string `json:"by"`
+	Descendants int    `json:"descendants"`
+	ID          int    `json:"id"`
+	Kids        []int  `json:"kids"`
+	Score       int    `json:"score"`
+	Time        int    `json:"time"`
+	Title       string `json:"title"`
+	Type        string `json:"type"`
+	URL         string `json:"url"`
+}
+var tpl *template.Template
+
+func init() {
+	tpl = template.Must(template.ParseGlob("template/*"))
 }
