@@ -42,11 +42,12 @@ Se mappen "Oppgave 3". Server programmet som er implementert svarer på RFC 865,
 Ved å ta i bruk programmer som ligner på nmap(ncat) så får man muligheten til å scanne porten på TCP óg UDP. I en standard windows så får man bare mulighet til å scanne etter TCP porter ved bruk av telnet.
 
 Kommandoer brukt for å få serveren til å responde:
-
-Kommandoer
+```
+Kommandoer:
 - Kommando i netcat(CMD) for tcp: netcat -z -v ip port
 - Kommando i netcat(CMD) for udp: netcat -z -v -u ip port
 - Kommando i CMD for tcp: telnet ip port 
+```
 
 Visualisert i Linux med innebygd nmap(ncat).
 
