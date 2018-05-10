@@ -13,9 +13,7 @@ import (
 
 const URL = "https://api.coinmarketcap.com/v1/ticker/"
 
-
 var client =&http.Client{Timeout: 10*time.Second}
-
 
 func main() {
 
@@ -28,7 +26,6 @@ func main() {
 }
 
 func basicHandler(w http.ResponseWriter, r *http.Request) {
-
 
 	if r.Method != "POST" {
 		http.Redirect(w, r, "/", http.StatusSeeOther)
@@ -49,9 +46,7 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("error: ", err2)
 	}
 
-
 	tpl.ExecuteTemplate(w, "print.html", d)
-
 
 	err := r.ParseForm()
 	if err != nil{
