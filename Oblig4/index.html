@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html>
 <title>Tracker</title>
-<br><br><br>
-<h1 align="center">Cryptocurrency Tracker</h1>
-<br><br>
-
-<form action ="/1" method="POST" align="center">
-    <label for="lat">Crypto</label>
-    <input type="text" name="Name" id="n" placeholder="Eks:bitcoin">
-
-
-
-    <input type="submit">
-</form>
-
-
-
-<footer>Ønsker du å sjekke en annen crypto? Trykk på knappen!
-    <form action ="/" align="center">
-        <input type="submit" value="Gå tilbake">
-
-    </form>
-    <br>
-
-</footer>
-
+<meta charset="UTF-8">
 <head>
-    <head>
+    <br><br><br>
+    <h2 align="center">Cryptocurrency Tracker</h2>
+    <p align="center">Wrong? Search for another Cryptocurrency</p>
         <style>
             tbody {
                 border-collapse: collapse;
             }
-             td {
+            td {
                 border: 1px solid white;
                 color: white;
             }
-            h1 {
+            h2 {
                 color: white;
             }
             th {
                 border: 1px solid white;
                 color: lawngreen;
             }
+            p {
+                color: white;
+            }
+            label {
+                color: white;
+            }
         </style>
     </head>
-<body bgcolor="#000000"><table align="center">
-    <tbody>
-
-    </tr>
-    <tr>
-        <th align="center">Rank: </th>
-        <th align="center">Name: </th>
-        <th align="center">Symbol: </th>
-        <th align="center">Value: </th>
-        <th align="center">Change 24h: </th>
-        <th align="center">Change 1h: </th>
-    {{range.}}
-    <tr>
-            <td width="auto"> | {{.Rank}}.</td>
-            <td width="160px"> | {{.Name}}</td>
-            <td width="160px"> | {{.Symbol}}</td>
-            <td width="160px"> | ${{.PriceUsd}}</td>
-            <td width="160px"> | {{.PercentChange24H}}%</td>
-            <td width="160px"> | {{.PercentChange1H}}%</td>
+    <body bgcolor="#000000" align="center">
+        <form name="form1" id="form1" action ="/info" method="POST">
+            <label for="lat">Search: </label>
+            <input type="text" name="Name" id="n" placeholder="e.g:bitcoin">
+            <input type="submit">
+        </form>
+    <br>
+    <table align="center">
+    <tbody align="left">
+        {{range.}}
+        <tr>
+                <td width="50"> | {{.Rank}}.</td>
+                <td width="160px"> | {{.Name}}</td>
+                <td width="160px"> | {{.Symbol}}</td>
+                <td width="160px"> | ${{.PriceUsd}}</td>
+                <td width="160px"> | {{.PercentChange24H}}%</td>
+                <td width="160px"> | {{.PercentChange1H}}%</td>
         </tr>
-    {{end}}
-
-    </tr>
-
+        {{end}}
     </tbody>
-
-
-
-</iframe>
-</body>
+    </table>
+    <br>
+    <footer>
+        <form action ="/">
+            <input type="submit" value="Gå tilbake">
+        </form>
+    </footer>
+    </body>
 </html>
