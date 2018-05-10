@@ -7,4 +7,10 @@ Medlemmer:
 - Arian Nuland. 
 
 
+### Systemspesifikasjon
 
+
+### Systemarkitektur
+
+
+### Hvordan ta i bruk applikasjonen
