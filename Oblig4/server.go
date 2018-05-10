@@ -20,7 +20,7 @@ var client =&http.Client{Timeout: 10*time.Second}
 func main() {
 
 	http.HandleFunc("/", startSide)
-	http.HandleFunc("/1", basicHandler)
+	http.HandleFunc("/info", basicHandler)
 	if err := http.ListenAndServe(":8080", nil); err !=nil{
 		panic(err)
 	}
