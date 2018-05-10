@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>Tracker</title>
+<meta charset="UTF-8">
 <head>
-    <meta charset="UTF-8">
-    <title>Tracker</title>
-
-    <style>
-        tbody {
-            border-collapse: collapse;
-        }
-        td {
-            border: 1px solid white;
-            color: white;
-        }
-        h1 {
-            color: white;
-        }
-        th {
-            border: 1px solid white;
-            color: lawngreen;
-        }
-
-    </style>
-</head>
-<body bgcolor="#000000" align="center">
-<br><br><br>
-<h1>Skriv inn navnet til hvilken cryptocurreny du ønsker å se</h1>
-
-
-<form action ="/1" method="POST">
-    <label for="lat">Crypto</label>
-    <input type="text" name="Name" id="n" placeholder="Eks:bitcoin">
-
-
-
-    <input type="submit">
-</form>
-
-
-
-</body>
-</html>
+    <br><br><br>
+    <h2>Search for your desired Cryptocurrency below</h2>
+        <style>
+            tbody {
+                border-collapse: collapse;
+            }
+            td {
+                border: 1px solid white;
+                color: white;
+            }
+            h2 {
+                color: white;
+            }
+            th {
+                border: 1px solid white;
+                color: lawngreen;
+            }
+            p {
+                color: white;
+            }
+            label {
+                color: white;
+            }
+        </style>
+    </head>
+    <body bgcolor="#000000" align="center">
+    <br>
+    <form action ="/info" method="POST">
+        <label for="lat">Search: </label>
+        <input type="text" name="Name" id="n" placeholder="e.g:bitcoin">
+        <input type="submit">
+    </form>
+    </body>
+html>
