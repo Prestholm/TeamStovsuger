@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-<title>Tracker</title>
+<title>CryptoCurrency Tracker</title>
 <meta charset="UTF-8">
 <head>
-    <br><br><br>
-    <h2>Search for your desired Cryptocurrency below</h2>
         <style>
             tbody {
                 border-collapse: collapse;
@@ -22,18 +20,39 @@
             }
             p {
                 color: white;
+                text-align: justify;
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+            #p01{
+                color: white;
+                text-align: center;
             }
             label {
-                color: white;
+                color: lawngreen;
+            }
+            body {
+                background-color: black;
             }
         </style>
+    <br><br><br>
+    <h2 align="center">Cryptocurrency Tracker</h2>
+    <p>Welcome to a Cryptocurrency Tracker, this tracker gives
+        you the information of the 100 most used Cryptocurrencies
+        world-wide. The tracker gives the user the option to search
+        for their desired currency or view all 100 in one list.
+    </p>
     </head>
-    <body bgcolor="#000000" align="center">
-    <br>
-    <form action ="/info" method="POST">
+    <body align="center">
+    <form name="form1" id="form1" action ="/info" method="POST">
         <label for="lat">Search: </label>
         <input type="text" name="Name" id="n" placeholder="e.g:bitcoin">
         <input type="submit">
     </form>
+    <p id="p01">Or:</p>
+    <body bgcolor="#000000" align="center">
+        <form name="form1" id="form1" action ="/list">
+             <input type="submit" value=" View all Cryptocurrencies here ">
+        </form>
     </body>
-html>
+</html>
