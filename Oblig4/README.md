@@ -21,7 +21,7 @@ For å gjøre applikasjonen mer dynamisk har vi implementert en converter som ko
 Nodene som er involvert i systemet er klient, webserver og databaseserver. Applikasjonen oppretter en webserver på port ":8080". Klienten sender så en forespørsel til webserveren som videre henter live-data fra databaseserveren til coinmarketcap. Deretter blir denne returnert til klienten. 
 
 
------(figur her)-----
+![Mac](https://github.com/Prestholm/TeamStovsuger/blob/master/Oblig4/Bilder/32323871_1815296048513457_1596700920316428288_n.png)
 
 
 ### Hvordan ta i bruk applikasjonen
@@ -34,7 +34,7 @@ Nodene som er involvert i systemet er klient, webserver og databaseserver. Appli
 
 ### Testing
 
-Vi har utviklet enhetstester (se "server_test.go") for å sikre at kildekoden oppfører seg som den skal. Her tester vi ...
+Vi har utviklet enhetstester (se "server_test.go") for å sikre at kildekoden oppfører seg som den skal. Her tester vi blant annet ....
 
 
 
