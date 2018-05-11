@@ -28,7 +28,7 @@ func TestStartSide(t *testing.T) {
 
 
 
-func eksistensTest(filename string) bool {
+func fileTest(filename string) bool {
 	if _, err := os.Stat(filename); err != nil {
 		if os.IsNotExist(err) {
 			return false
@@ -44,28 +44,28 @@ func check(e error) {
 }
 // template testene får man Fail pga de er ikke i samme mappe som server.go
 func TestTemplate1(t *testing.T){
-	r := eksistensTest("form.html")
+	r := fileTest("form.html")
 	if r == false {
 		t.Error("Finner ikke filen")
 	}
 }
 
 func TestTemplate2(t *testing.T){
-	r := eksistensTest("info.html")
+	r := fileTest("info.html")
 	if r == false {
 		t.Error("Finner ikke filen")
 	}
 }
 
 func TestTemplate3(t *testing.T){
-	r := eksistensTest("print.html")
+	r := fileTest("print.html")
 	if r == false {
 		t.Error("Finner ikke filen")
 	}
 }
 
 func TestTemplate4(t *testing.T){
-	r := eksistensTest("index1.html")
+	r := fileTest("index1.html")
 	if r == false {
 		t.Error("Finner ikke filen")
 	}
