@@ -13,19 +13,34 @@ import (
 
 const URL = "https://api.coinmarketcap.com/v1/ticker/"
 
+
 var client =&http.Client{Timeout: 10*time.Second}
+
 
 func main() {
 
 	http.HandleFunc("/", startSide)
-	http.HandleFunc("/info", basicHandler)
+	http.HandleFunc("/1", basicHandler)
+	http.HandleFunc("/2", liste)
 	if err := http.ListenAndServe(":8080", nil); err !=nil{
 		panic(err)
 	}
 	log.Println("Listening...")
 }
+func liste(w http.ResponseWriter, r *http.Request){
+	res, _ := http.Get(URL)
+	body, _ := ioutil.ReadAll(res.Body)
+	coin := Coins{}
+	err3 := json.Unmarshal(body, &coin)
+	if err3 !=nil {
+		fmt.Println("error: ", err3)
+	}
+	tpl.ParseFiles("index1.html"	)
+	tpl.ExecuteTemplate(w, "index1.html", coin)
 
+}
 func basicHandler(w http.ResponseWriter, r *http.Request) {
+
 
 	if r.Method != "POST" {
 		http.Redirect(w, r, "/", http.StatusSeeOther)
@@ -37,6 +52,7 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	}{
 		Name: n,
 	}
+	tpl.ExecuteTemplate(w, "print.html", d)
 	ID1 := r.PostFormValue("Name")
 	res2, _ := http.Get(URL+ID1)
 	body2, _ := ioutil.ReadAll(res2.Body)
@@ -46,7 +62,8 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("error: ", err2)
 	}
 
-	tpl.ExecuteTemplate(w, "print.html", d)
+
+
 
 	err := r.ParseForm()
 	if err != nil{
@@ -61,8 +78,8 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	if err3 !=nil {
 		fmt.Println("error: ", err3)
 	}
-	tpl.ParseFiles("index.html"	)
-	tpl.ExecuteTemplate(w, "index.html", coin)
+	tpl.ParseFiles("index1.html"	)
+	tpl.ExecuteTemplate(w, "index1.html", coin)
 }
 var tpl *template.Template
 
@@ -85,6 +102,7 @@ func startSide(w http.ResponseWriter, r *http.Request){
 	tpl.ParseFiles("form.html")
 	tpl.ExecuteTemplate(w, "form.html", nil)
 }
+
 type Coins []struct {
 
 	ID               string `json:"id"`
@@ -102,4 +120,6 @@ type Coins []struct {
 	PercentChange24H string `json:"percent_change_24h"`
 	PercentChange7D  string `json:"percent_change_7d"`
 	LastUpdated      string `json:"last_updated"`
+
 }
+
