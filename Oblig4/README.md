@@ -13,7 +13,7 @@ Applikasjonen er en tjeneste for kryptovaluta. Den tar i bruk live data fra coin
 
 På startsiden skriver brukeren inn ønsket valuta, eller trykker på knappen for å få opp en ny side med oversikt i tabellform. Tabellen i programmet viser 100 forskjellige valuta i rangert rekkefølge. Når brukeren skriver ønsket valuta får han opp en side med mer informasjon om valutaen. 
 
-For å gjøre applikasjonen mer dynamisk har vi implementert en converter som konverterer verdien av forskjellig valuta, for eksempel hvor mye 1 Bitcoin er verdt i USD eller motsatt. Vi har også lagt til en ekstra API som henter logoene til forskjellig kryptovaluta. Applikasjonen oppdaterer ikke currency-data automatisk. Dette kunne vi fått til ved å implementere en websocket. 
+For å gjøre applikasjonen mer dynamisk har vi implementert en converter som konverterer verdien av forskjellig valuta, for eksempel hvor mye 1 Bitcoin er verdt i USD eller motsatt. Vi har også lagt til en ekstra API som henter logoene til forskjellig kryptovaluta. Applikasjonen oppdaterer ikke currency-data automatisk. Dette kunne vi fått til ved å implementere en websocket og jQuery AJAX. 
 
 
 Samfunnets/brukerens nytteverdi av applikasjonen.... 
