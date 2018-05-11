@@ -27,12 +27,18 @@ Applikasjonen oppretter en webserver på port ":8080".
 
 ### Hvordan ta i bruk applikasjonen
 
-1. 
-2.
+1. Skriv "go run server.go" i terminalen.
+2. Gå til "localhost:8080" i nettleseren.
 3. 
+4. 
 
 
 ### Testing
+
+Se server_test.go. Vi har utviklet enhetstester for å sikre at kildekoden oppfører seg som den skal. 
+
+Si litt mer her...
+
 
 
 
