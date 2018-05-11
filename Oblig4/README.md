@@ -30,7 +30,7 @@ Applikasjonen oppretter en webserver på port ":8080".
 1. Skriv "go run server.go" i terminalen.
 2. Gå til "localhost:8080" i nettleseren.
 3. Skriv inn kryptovaluta du ønsker informasjon om, eller trykk på knappen for å få oversikt over live-rangeringen i tabellform. 
-4. Søk etter en kryptovaluta for å få opp converteren.
+4. For å få opp converteren må du søke etter en valuta. 
 
 
 ### Testing
