@@ -71,15 +71,7 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	tpl.ExecuteTemplate(w, "info.html", coin2)
 
-	res, _ := http.Get(URL)
-	body, _ := ioutil.ReadAll(res.Body)
-	coin := Coins{}
-	err3 := json.Unmarshal(body, &coin)
-	if err3 !=nil {
-		fmt.Println("error: ", err3)
-	}
-	tpl.ParseFiles("index1.html"	)
-	tpl.ExecuteTemplate(w, "index1.html", coin)
+
 }
 var tpl *template.Template
 
