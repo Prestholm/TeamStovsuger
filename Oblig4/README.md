@@ -9,31 +9,35 @@ Medlemmer:
 
 ### Systemspesifikasjon
 
-Applikasjonen tar i bruk live informasjon fra coinmarketcap.com.  
+Applikasjonen er en tjeneste som gjør det enkelt for brukeren å følge med på verdien av ulike typer kryptovaluta. Den tar i bruk live data fra coinmarketcap.com. Her får brukeren blant annet informasjon om forskjellige kryptovaluta, forkortelser, rangering, pris, antall i omløp og prosentvis endring over en gitt tidsperiode. 
 
-Brukeren skriver inn ønsket valuta, eller trykker på knappen for å få oversikt i tabellform. 
+På startsiden skriver brukeren inn ønsket valuta, eller trykker på knappen for å få opp en ny side med oversikt i tabellform. Tabellen i programmet viser 100 forskjellige valuta i rangert rekkefølge. Når brukeren skriver ønsket valuta får han opp en side med mer informasjon om valutaen. 
 
-Når bruker skriver ønsket valuta....
-
-Tabellen i programmet viser 100 forskjellige valuta i rangert rekkefølge. 
-
-Samfunnets/brukerens nytteverdi av applikasjonen.... 
-
-Applikasjonen oppdaterer ikke currency-data automatisk. Dette kunne vi fått til ved å implementert en websocket. 
-
-Hva brukeren får informasjon om ....
+For å gjøre applikasjonen mer dynamisk har vi implementert en converter som konverterer verdien av forskjellig valuta, for eksempel hvor mye 1 Bitcoin er verdt i USD eller motsatt. Vi har også lagt til en ekstra API som henter logoene til forskjellig kryptovaluta. Applikasjonen oppdaterer ikke currency-data automatisk. Dette kunne vi fått til ved å implementere en websocket og jQuery AJAX. 
 
 
 ### Systemarkitektur
 
-Applikasjonen oppretter en webserver på port ":8080". 
+Nodene som er involvert i systemet er klient, webserver og databaseserver. Applikasjonen oppretter en webserver på port ":8080". Klienten sender så en forespørsel til webserveren som videre henter live-data fra databaseserveren til coinmarketcap. Deretter blir denne returnert til klienten. 
+
+
+-----(figur her)-----
 
 
 ### Hvordan ta i bruk applikasjonen
 
+1. Skriv "go run server.go" i terminalen.
+2. Gå til "localhost:8080" i nettleseren.
+3. Skriv inn kryptovaluta du ønsker informasjon om, eller trykk på knappen for å få oversikt over live-rangeringen i tabellform. 
+4. For å få opp converteren må du søke etter en valuta. 
 
 
 ### Testing
+
+Vi har utviklet enhetstester (se "server_test.go") for å sikre at kildekoden oppfører seg som den skal. Her tester vi ...
+
+
+
 
 
 

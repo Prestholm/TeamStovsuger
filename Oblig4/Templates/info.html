@@ -1,45 +1,151 @@
 <!DOCTYPE html>
 <html>
-<title>Tracker</title>
+<title>CryptoCurrency Tracker</title>
 <meta charset="UTF-8">
 <head>
-    <head>
-        <style>
-            tbody {
-                border-collapse: collapse;
-            }
-             td {
-                border: 1px solid white;
-                color: white;
-            }
-            h1 {
-                color: white;
-            }
-            th {
-                border: 1px solid white;
-                color: lawngreen;
-            }
-        </style>
-    </head>
-    <body bgcolor="#000000"><table align="center">
-    <tbody align="left">
-    <tr>
-            <th width="50px" align="center">Rank: </th>
-            <th align="center">Name: </th>
-            <th align="center">Symbol: </th>
-            <th align="center">Value: </th>
-            <th align="center">Change 24h: </th>
-            <th align="center">Change 1h: </th>
-    {{range.}}
-    <tr>
-            <td width="auto" align="left"> | {{.Rank}}.</td>
-            <td width="160px"> | {{.Name}}</td>
-            <td width="160px"> | {{.Symbol}}</td>
-            <td width="160px"> | ${{.PriceUsd}}</td>
-            <td width="160px"> | {{.PercentChange24H}}%</td>
-            <td width="160px"> | {{.PercentChange1H}}%</td>
-    </tr>
-    {{end}}
-    </tbody>
-    </body>
+    <style>
+        tbody {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid white;
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        th {
+            border: 1px solid white;
+            color: lawngreen;
+        }
+        p {
+            color: white;
+        }
+        #p01 {
+            color: lawngreen;
+            text-align: justify;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+        label {
+            color: lawngreen;
+        }
+        body {
+            background-color: black;
+        }
+        a:link {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: antiquewhite;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: lawngreen;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body align="center">
+<p id="p01" align="center">Wrong? Try agian and search for another Cryptocurrency. If you're not sure about
+    what your currency is know as, we refer to our list of all <a href="/list">Cryptocurrencies.</a></p>
+<form name="form1" id="form1" action ="/info" method="POST">
+    <label for="lat">Search: </label>
+    <input type="text" name="Name" id="n" placeholder="e.g:bitcoin">
+    <input type="submit">
+</form>
+<br>
+<form name="form1" id="form1" action ="/list">
+    <input type="submit" value=" View all Cryptocurrencies here ">
+</form>
+<br>
+<table align="center">
+<tbody align="left">
+<tr>
+{{range.}}
+    <th width="50px" align="center">Rank: </th>
+    <th align="center">Name: </th>
+    <th align="center">Known as: </th>
+    <th align="center">Value: </th>
+    <th align="center">Change 24h: </th>
+    <th align="center">Change 1h: </th>
+<tr>
+    <td width="auto" align="center"> {{.Rank}}.</td>
+    <td width="160px"> | {{.Name}}</td>
+    <td width="160px"> | {{.Symbol}}</td>
+    <td width="160px"> | ${{.PriceUsd}}</td>
+    <td width="160px"> | {{.PercentChange24H}}%</td>
+    <td width="160px"> | {{.PercentChange1H}}%</td>
+<tr>
+    <th width="60px" align="center">ID: </th>
+    <th align="center">Available Supply: </th>
+    <th align="center">Total Supply: </th>
+    <th align="center">Market Cap USD: </th>
+    <th align="center">Change 7d: </th>
+    <th align="center">Price Btc: </th>
+<tr>
+    <td width="60px" align="center"> {{.ID}}.</td>
+    <td width="160px"> | {{.AvailableSupply}} - {{.Symbol}}</td>
+    <td width="160px"> | {{.TotalSupply}} - {{.Symbol}}</td>
+    <td width="160px"> | {{.MarketCapUsd}}</td>
+    <td width="160px"> | {{.PercentChange7D}}%</td>
+    <td width="160px"> | {{.PriceBtc}}</td>
+</tr>
+
+<script>
+    function calculate(){
+        var x = parseFloat({{.PriceUsd}})
+        var y = document.getElementById('Value').value;
+        var result = document.getElementById('result');
+        var myResult = x * y;
+        result.value = myResult
+    }
+    function recalculate() {
+        var x = parseFloat({{.PriceUsd}})
+        var y = document.getElementById('vv').value;
+        var result = document.getElementById('rr');
+        var myResult2 = y/x;
+        rr.value = myResult2
+    }
+</script>
+</tbody>
+    <table align="center">
+        <br>
+        <p>Currency Converter</p>
+        <tr>
+            <td>Convert from : {{.Name}} </td>
+            <td><input type="number" name="Value" id="Value" oninput="calculate()">#</td>
+        </tr>
+        <td>Sum: USD$ </td>
+        <td><input type="number" id="result" name="total">$</td>
+    </table>
+    <p>Reverted</p>
+    <table align="center">
+        <tr>
+            <td>Convert from USD$: </td>
+            <td><input type="number" name="Value" id="vv" oninput="recalculate()">$</td>
+        </tr>
+
+        <td>Sum: {{.Name}} </td>
+        <td><input type="number" id="rr" name="total">#</td>
+
+    </table>
+{{end}}
+</table>
+<br>
+<footer>
+    <form action ="/">
+        <input type="submit" value="Home">
+    </form>
+</footer>
+</body>
 </html>
