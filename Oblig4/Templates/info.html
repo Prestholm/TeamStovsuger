@@ -123,22 +123,20 @@
                 <br>
                 <p>Currency Converter</p>
                 <tr>
-                    <td>Covert from USD$: </td>
+                    <td>Convert from : {{.Name}} </td>
                     <td><input type="number" name="Value" id="Value" oninput="calculate()">$</td>
                 </tr>
-                    <td>Sum: {{.Name}} </td>
+                    <td>Sum: USD$ </td>
                     <td><input type="number" id="result" name="total">#</td>
-
             </table>
         <p>Reverted</p>
         <table align="center">
                 <tr>
-                    <td>Covert from {{.Name}}: </td>
+                    <td>Convert from USD$: </td>
                     <td><input type="number" name="Value" id="vv" oninput="recalculate()">#</td>
                 </tr>
-                    <td>Sum: USD$ </td>
+                    <td>Sum: {{.name}} </td>
                     <td><input type="number" id="rr" name="total">$</td>
-
         </table>
     {{end}}
         </table>
