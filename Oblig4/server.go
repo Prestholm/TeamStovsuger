@@ -71,7 +71,7 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 var tpl *template.Template
-func getData(){
+func getData(url string, target interface{}){
 		//henter json-data fra url. Decoder denne dataen.
 		res,err := client.Get(url)
 		if err != nil {
