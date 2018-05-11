@@ -13,7 +13,6 @@ import (
 )
 
 const URL = "https://api.coinmarketcap.com/v1/ticker/"
-const URL2 = "https://www.cryptocompare.com/api/data/coinlist/"
 
 var client =&http.Client{Timeout: 10*time.Second}
 
