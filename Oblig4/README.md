@@ -34,7 +34,7 @@ Nodene som er involvert i systemet er klient, webserver og databaseserver. Appli
 
 ### Testing
 
-Vi har utviklet enhetstester (se "server_test.go") for å sikre at kildekoden oppfører seg som den skal. Her tester vi blant annet ....
+Vi har utviklet enhetstester (se "server_test.go") for å sikre at kildekoden oppfører seg som den skal. Her tester vi blant annet om filene i mappen "Templates" er tilstede og om URL-linken vi bruker inneholder JSON. 
 
 
 
