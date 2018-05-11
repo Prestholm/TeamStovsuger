@@ -7,6 +7,7 @@ import (
 	"encoding/json"
 	"time"
 	"fmt"
+	"strings"
 
 	"io/ioutil"
 )
@@ -14,15 +15,13 @@ import (
 const URL = "https://api.coinmarketcap.com/v1/ticker/"
 const URL2 = "https://www.cryptocompare.com/api/data/coinlist/"
 
-
 var client =&http.Client{Timeout: 10*time.Second}
-
 
 func main() {
 
 	http.HandleFunc("/", startSide)
-	http.HandleFunc("/1", basicHandler)
-	http.HandleFunc("/2", liste)
+	http.HandleFunc("/info", basicHandler)
+	http.HandleFunc("/list", liste)
 	if err := http.ListenAndServe(":8080", nil); err !=nil{
 		panic(err)
 	}
@@ -36,12 +35,11 @@ func liste(w http.ResponseWriter, r *http.Request){
 	if err3 !=nil {
 		fmt.Println("error: ", err3)
 	}
-	tpl.ParseFiles("index1.html"	)
-	tpl.ExecuteTemplate(w, "index1.html", coin)
+	tpl.ParseFiles("list.html"	)
+	tpl.ExecuteTemplate(w, "list.html", coin)
 
 }
 func basicHandler(w http.ResponseWriter, r *http.Request) {
-
 
 	if r.Method != "POST" {
 		http.Redirect(w, r, "/", http.StatusSeeOther)
@@ -51,7 +49,7 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	d := struct {
 		Name string
 	}{
-		Name: n,
+		Name: strings.ToLower(n),
 	}
 	tpl.ExecuteTemplate(w, "print.html", d)
 	ID1 := r.PostFormValue("Name")
@@ -62,7 +60,6 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	if err2 !=nil {
 		fmt.Println("error: ", err2)
 
-
 	}
 	err := r.ParseForm()
 	if err != nil{
@@ -70,12 +67,8 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	tpl.ParseFiles("32x32/*")
 	tpl.ExecuteTemplate(w, "info.html", coin2)
-
-
-
-
-
 }
+
 var tpl *template.Template
 
 func getData(url string, target interface{})error{
@@ -117,5 +110,4 @@ type Coins []struct {
 	LastUpdated      string `json:"last_updated"`
 
 }
-
 
