@@ -29,8 +29,8 @@ func main() {
 func liste(w http.ResponseWriter, r *http.Request){
 	coins := new(Coins)
 	getData(URL, coins)
-	tpl.ParseFiles("liste.html"	)
-	tpl.ExecuteTemplate(w, "liste.html", coins)
+	tpl.ParseFiles("list.html"	)
+	tpl.ExecuteTemplate(w, "list.html", coins)
 
 }
 func basicHandler(w http.ResponseWriter, r *http.Request) {
@@ -59,7 +59,7 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil{
 		panic(err)
 	}
-	tpl.ParseFiles("32x32/*")
+	
 	tpl.ExecuteTemplate(w, "info.html", coin2)
 }
 
