@@ -2,15 +2,34 @@
 
 package main
 
-import (
-	"testing"
+import ("testing"
 	"os"
+	"log"
+	"net/http"
+	"net/http/httptest"
 
+	"time"
 )
 
+func TestStartSide(t *testing.T) {
+	req, err := http.NewRequest("GET", "https://api.coinmarketcap.com/v1/ticker/", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	recorder := httptest.NewRecorder()
+	handler := http.HandlerFunc(startSide)
+	handler.ServeHTTP(recorder, req)
+	status := recorder.Code
+	if  status != http.StatusOK {
+		t.Errorf("Unexpected return got %v wanted %v",
+			status, http.StatusOK)
+	}
+}
 
-func findFiles(name string) bool {
-	if _, err := os.Stat(name); err != nil {
+
+//Mulig å få mindre code duplication her?
+func eksistensTest(filename string) bool {
+	if _, err := os.Stat(filename); err != nil {
 		if os.IsNotExist(err) {
 			return false
 		}
@@ -18,39 +37,47 @@ func findFiles(name string) bool {
 	return true
 }
 
-
-
-func testFile1(t *testing.T){
-	r := findFiles("form.html")
+func check(e error) {
+	if e != nil {
+		log.Fatal(e)
+	}
+}
+// template testene får man Fail pga de er ikke i samme mappe som server.go
+func TestTemplate1(t *testing.T){
+	r := eksistensTest("form.html")
 	if r == false {
-		t.Error("Did not find ....")
+		t.Error("Template not found")
 	}
 }
 
-
-func testFile2(t *testing.T){
-	r := findFiles("index.html")
+func TestTemplate2(t *testing.T){
+	r := eksistensTest("info.html")
 	if r == false {
-		t.Error("Did not find ....")
+		t.Error("Template not found")
 	}
 }
 
-func testFile3(t *testing.T){
-	r := findFiles("info.html")
+func TestTemplate3(t *testing.T){
+	r := eksistensTest("print.html")
 	if r == false {
-		t.Error("Did not find ....")
+		t.Error("Template not found")
 	}
 }
 
-
-func testFile4(t *testing.T){
-	r := findFiles("print.html")
+func TestTemplate4(t *testing.T){
+	r := eksistensTest("index1.html")
 	if r == false {
-		t.Error("Did not find ....")
+		t.Error("Template not found")
 	}
 }
+// tester om det er json
+func TestGetJson(t *testing.T) {
+	coins := new(Coins)
+		server := getData("https://api.coinmarketcap.com/v1/ticker/", coins)
+		time.Sleep(time.Second*1)
+		if server != nil {
+			t.Errorf("There is no Json in this")
+		}
 
-
-
-
+}
 
