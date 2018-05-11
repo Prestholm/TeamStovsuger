@@ -21,6 +21,9 @@ For å gjøre applikasjonen mer dynamisk har vi implementert en converter som ko
 Nodene som er involvert i systemet er klient, webserver og databaseserver. Applikasjonen oppretter en webserver på port ":8080". Klienten sender så en forespørsel til webserveren som videre henter live-data fra databaseserveren til coinmarketcap. Deretter blir denne returnert til klienten. 
 
 
+-----(figur her)-----
+
+
 ### Hvordan ta i bruk applikasjonen
 
 1. Skriv "go run server.go" i terminalen.
@@ -31,9 +34,9 @@ Nodene som er involvert i systemet er klient, webserver og databaseserver. Appli
 
 ### Testing
 
-Se server_test.go. Vi har utviklet enhetstester for å sikre at kildekoden oppfører seg som den skal. 
+Vi har utviklet enhetstester (se "server_test.go") for å sikre at kildekoden oppfører seg som den skal. Her tester vi ...
 
-Si litt mer her...
+
 
 
 
