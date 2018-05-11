@@ -31,15 +31,10 @@ func main() {
 	log.Println("Listening...")
 }
 func liste(w http.ResponseWriter, r *http.Request){
-	res, _ := http.Get(URL) //henter Urlen
-	body, _ := ioutil.ReadAll(res.Body) //leser URLen
-	coin := Coins{}
-	err3 := json.Unmarshal(body, &coin)//Legger body inn i coins
-	if err3 !=nil {
-		fmt.Println("error: ", err3)
-	}
+	coins = new(Coins)
+	getData(URL, coins)
 	tpl.ParseFiles("list.html"	)
-	tpl.ExecuteTemplate(w, "list.html", coin) // kjører siden med coins som data, slik at den kan hente alt data URL har å gi på Coins{}
+	tpl.ExecuteTemplate(w, "list.html", coins) // kjører siden med coins som data, slik at den kan hente alt data URL har å gi på Coins{}
 
 }
 func basicHandler(w http.ResponseWriter, r *http.Request) {
@@ -76,7 +71,16 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 var tpl *template.Template
+func getData(){
+		//henter json-data fra url. Decoder denne dataen.
+		res,err := client.Get(url)
+		if err != nil {
+			return err
+		}
+		defer res.Body.Close()
 
+		return json.NewDecoder(res.Body).Decode(target)
+}
 
 func init() {
 	tpl = template.Must(template.ParseGlob("Templates/*"))
