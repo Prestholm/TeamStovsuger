@@ -2,10 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>what</title>
-</head>
-<body>
-<h1><b>Oversikt over {{.Name}}<img src="https://cdn.worldvectorlogo.com/logos/{{.Name}}.svg" alt=".png" height="72" width="72"></b></h1>
-</body>
+    <title>CryptoCurrency Tracker</title>
+    <style>
+        h3, h2 {
+            color: white;
 
-</html>
+        }
+        img {
+            padding: 8px;
+        }
+    </style>
+    </head>
+    <body>
+        <h3 align="center">Cryptocurrency Tracker</h3>
+        <h2 align="center"><b>Detailed information of: <{{.Name}}></b></h2>
+        <p id="p02" align="center"><img src="https://cdn.worldvectorlogo.com/logos/{{.Name}}.svg" alt=".png" height="100px" width="100px"></p>
+    </body>
+    </html>
