@@ -12,6 +12,7 @@ import (
 )
 
 const URL = "https://api.coinmarketcap.com/v1/ticker/"
+const URL2 = "https://www.cryptocompare.com/api/data/coinlist/"
 
 
 var client =&http.Client{Timeout: 10*time.Second}
@@ -60,16 +61,18 @@ func basicHandler(w http.ResponseWriter, r *http.Request) {
 	err2 := json.Unmarshal(body2, &coin2)
 	if err2 !=nil {
 		fmt.Println("error: ", err2)
+
+
 	}
-
-
-
-
 	err := r.ParseForm()
 	if err != nil{
 		panic(err)
 	}
+	tpl.ParseFiles("32x32/*")
 	tpl.ExecuteTemplate(w, "info.html", coin2)
+
+
+
 
 
 }
@@ -114,4 +117,5 @@ type Coins []struct {
 	LastUpdated      string `json:"last_updated"`
 
 }
+
 
