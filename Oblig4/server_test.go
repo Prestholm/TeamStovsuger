@@ -27,7 +27,7 @@ func TestStartSide(t *testing.T) {
 }
 
 
-//Mulig å få mindre code duplication her?
+
 func eksistensTest(filename string) bool {
 	if _, err := os.Stat(filename); err != nil {
 		if os.IsNotExist(err) {
@@ -46,28 +46,28 @@ func check(e error) {
 func TestTemplate1(t *testing.T){
 	r := eksistensTest("form.html")
 	if r == false {
-		t.Error("Template not found")
+		t.Error("Finner ikke filen")
 	}
 }
 
 func TestTemplate2(t *testing.T){
 	r := eksistensTest("info.html")
 	if r == false {
-		t.Error("Template not found")
+		t.Error("Finner ikke filen")
 	}
 }
 
 func TestTemplate3(t *testing.T){
 	r := eksistensTest("print.html")
 	if r == false {
-		t.Error("Template not found")
+		t.Error("Finner ikke filen")
 	}
 }
 
 func TestTemplate4(t *testing.T){
 	r := eksistensTest("index1.html")
 	if r == false {
-		t.Error("Template not found")
+		t.Error("Finner ikke filen")
 	}
 }
 // tester om det er json
@@ -76,7 +76,7 @@ func TestGetJson(t *testing.T) {
 		server := getData("https://api.coinmarketcap.com/v1/ticker/", coins)
 		time.Sleep(time.Second*1)
 		if server != nil {
-			t.Errorf("There is no Json in this")
+			t.Errorf("Finner ikke JSON")
 		}
 
 }
