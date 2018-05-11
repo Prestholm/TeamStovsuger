@@ -9,19 +9,15 @@ Medlemmer:
 
 ### Systemspesifikasjon
 
-Applikasjonen tar i bruk live informasjon fra coinmarketcap.com.  
+Applikasjonen er en tjeneste for kryptovaluta. Den tar i bruk live data fra coinmarketcap.com. Her får brukeren blant annet informasjon om forskjellige kryptovaluta, forkortelser, rangering, pris, antall i omløp og prosentvis endring over en gitt tidsperiode. 
 
-Brukeren skriver inn ønsket valuta, eller trykker på knappen for å få oversikt i tabellform. 
+På startsiden skriver brukeren inn ønsket valuta, eller trykker på knappen for å få opp en ny side med oversikt i tabellform. Tabellen i programmet viser 100 forskjellige valuta i rangert rekkefølge. Når brukeren skriver ønsket valuta får han opp en side med mer informasjon om valutaen. 
 
-Når bruker skriver ønsket valuta....
+For å gjøre applikasjonen mer dynamisk har vi implementert en converter som konverterer verdien av forskjellig valuta, for eksempel hvor mye 1 Bitcoin er verdt i USD eller motsatt. Vi har også lagt til en ekstra API som henter logoene til forskjellig kryptovaluta. Applikasjonen oppdaterer ikke currency-data automatisk. Dette kunne vi fått til ved å implementere en websocket. 
 
-Tabellen i programmet viser 100 forskjellige valuta i rangert rekkefølge. 
 
 Samfunnets/brukerens nytteverdi av applikasjonen.... 
 
-Applikasjonen oppdaterer ikke currency-data automatisk. Dette kunne vi fått til ved å implementert en websocket. 
-
-Hva brukeren får informasjon om ....
 
 
 ### Systemarkitektur
@@ -31,6 +27,9 @@ Applikasjonen oppretter en webserver på port ":8080".
 
 ### Hvordan ta i bruk applikasjonen
 
+1. 
+2.
+3. 
 
 
 ### Testing
