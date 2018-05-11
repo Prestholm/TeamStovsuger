@@ -18,7 +18,7 @@ For å gjøre applikasjonen mer dynamisk har vi implementert en converter som ko
 
 ### Systemarkitektur
 
-Applikasjonen oppretter en webserver på port ":8080". 
+Nodene som er involvert i systemet er klient, webserver og databaseserver. Applikasjonen oppretter en webserver på port ":8080". Klienten sender så en forespørsel til webserveren som videre henter live-data fra databaseserveren til coinmarketcap. Deretter blir denne returnert til klienten. 
 
 
 ### Hvordan ta i bruk applikasjonen
