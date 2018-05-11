@@ -29,8 +29,8 @@ func main() {
 func liste(w http.ResponseWriter, r *http.Request){
 	coins := new(Coins)
 	getData(URL, coins)
-	tpl.ParseFiles("index1.html"	)
-	tpl.ExecuteTemplate(w, "index1.html", coins)
+	tpl.ParseFiles("liste.html"	)
+	tpl.ExecuteTemplate(w, "liste.html", coins)
 
 }
 func basicHandler(w http.ResponseWriter, r *http.Request) {
